@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Jeko-Regular";
+    src: url("../fonts/jeko/jeko-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+.jeko_regular {
+    font-family: "Jeko-Regular";
+}
