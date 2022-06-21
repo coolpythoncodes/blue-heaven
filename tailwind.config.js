@@ -6,6 +6,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors:{
+       blueBg : "#295562",
+       lightBlueTertiary: "#219EBC",
+       textColor: "#333",
+      },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
       }
