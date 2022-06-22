@@ -1,3 +1,9 @@
 .jeko_regular {
 	font-family: "Jeko-Regular";
 }
+
+.content {
+	flex: 1 0 auto;
+}
+
+

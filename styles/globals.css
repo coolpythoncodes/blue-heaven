@@ -12,23 +12,27 @@
 }
 
 @layer components {
-    .layout-container{
-        @apply w-11/12 mx-auto
-    }
-    .body-text {
-        @apply font-normal text-base leading-6
-    }
+	.layout-container {
+		@apply w-11/12 mx-auto;
+	}
+	.body-text {
+		@apply font-normal text-base leading-6;
+	}
 
-    .caption {
-        @apply font-light text-sm leading-[21px]
-    }
+	.caption {
+		@apply font-light text-sm leading-[21px];
+	}
 
-    .button-text {
-        @apply font-medium text-2xl leading-[29px]
-    }
+	.button-text {
+		@apply font-medium text-2xl leading-[29px];
+	}
 
-    .error {
-        @apply border border-red-500;
-    }
+	.error {
+		@apply border border-red-500;
+	}
+}
 
+html,
+body {
+	height: 100%;
 }
