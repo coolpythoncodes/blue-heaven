@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 
 const Home: NextPage = () => {
   return (
-    <Layout>
+    <Layout navBarColor="bg-blueBg">
       <h1>Hello world</h1>
     </Layout>
     // <div className={styles.container}>

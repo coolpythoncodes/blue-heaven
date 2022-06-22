@@ -1,3 +1,36 @@
+export const navLinks = [
+    {
+        text: "Home",
+        to: '/'
+    },
+    {
+        text: "About Us",
+        to: '/'
+    },
+    {
+        text: "Services",
+        categories: [
+            {
+                text: "Counselling",
+                to: '/'
+            },
+            {
+                text: "Coaching",
+                to: '/'
+            },
+            {
+                text: "Workshops",
+                to: '/'
+            },
+        ]
+    },
+    {
+        text: "FAQ",
+        to: '/'
+    },
+
+]
+
 export const footer_links = [
     {
         header: "Company",
