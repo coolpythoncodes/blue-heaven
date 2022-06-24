@@ -27,6 +27,25 @@
 		@apply font-medium text-2xl leading-[29px];
 	}
 
+	.mob-h1{
+		@apply font-normal text-4xl leading-[52px] tracking-[0.02em];
+	}
+
+	.mob-h2{
+		@apply font-normal text-2xl leading-[35px] tracking-[0.02em];
+	}
+
+	.heading-1 {
+		@apply font-normal text-7xl leading-[89px]
+	}
+
+	.heading-2{
+		@apply font-normal text-5xl leading-[59px] tracking-[0.02em];
+	}
+	.heading-3{
+		@apply font-normal text-2xl leading-[41px] tracking-[0.02em];
+	}
+
 	.error {
 		@apply border border-red-500;
 	}

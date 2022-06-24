@@ -1,10 +1,18 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+			xxs: "390px",
+      xs: "540px",
+			...defaultTheme.screens,
+		},
     extend: {
       colors: {
         blueBg: "#295562",

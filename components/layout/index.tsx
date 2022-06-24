@@ -14,7 +14,7 @@ type Props = {
 
 const Layout = ({ children, title = "Home", navBarColor }: Props) => {
     return (
-        <div className="h-screen flex flex-col bg-creamSecondaryBg">
+        <div className="h-screen flex flex-col">
             <Head>
                 <title>{title}</title>
                 <meta charSet="utf-8" />
@@ -23,7 +23,9 @@ const Layout = ({ children, title = "Home", navBarColor }: Props) => {
             </Head>
             <div className={styles.content}>
                 <NavBar navBarColor={navBarColor} />
-                {children}
+                <main className="bg-creamSecondaryBg">
+                    {children}
+                </main>
             </div>
             <Footer />
         </div>
