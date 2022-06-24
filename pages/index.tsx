@@ -22,6 +22,8 @@ import coaching from "../public/assets/images/coaching.png"
 import coloredCircle from "../public/assets/images/colored-circles.svg"
 import starShape from "../public/assets/images/star-shape.svg"
 import yellowBlackFlower from "../public/assets/images/yellow-black-flower.svg"
+import pointingArrow from "../public/assets/arrows/pointing-arrow.svg"
+import WhoWeAreSlide from '../components/whoWeAreSlide'
 
 const Home: NextPage = () => {
   return (
@@ -152,6 +154,10 @@ const Home: NextPage = () => {
           </h2>
           <p className="body-text font-inter xs:heading-3">BHCC aims to support individuals and families to develop new skills and take ownership of their lives following a program that is tailor-made to match everyone's needs. </p>
         </div>
+        <div className="mt-[19px] mb-[41px] h-[131px] w-[61px] relative left-[230px] xs:left-[300px] md:left-[450px] lg:left-[600px] xl:left-[700px]">
+          <Image src={pointingArrow} alt="" layout='fill'/>
+        </div>
+        <WhoWeAreSlide />
       </section>
 
 
