@@ -5,7 +5,7 @@
 @layer base {
 	@font-face {
 		font-family: "Jeko-Regular";
-		src: url("../fonts/jeko/jeko-Regular.ttf");
+		src: url("../fonts/jeko/Jeko-Regular.ttf");
 		font-weight: 400;
 		font-style: normal;
 	}
