@@ -99,8 +99,8 @@ const Home: NextPage = () => {
             <Button
               href="/"
               title="Learn More"
-              className="w-[134px] h-[40px] font-inter font-bold text-base text-black leading-6 flex justify-center items-center mx-auto border border-textColor rounded-t-[20px] xs:w-[240px] xs:button-text xs:h-[50px]"
-              arrowStyle='w-[11px] h-[11px] ml-[3px] xs:w-5 xs:h-5 xs:ml-7'
+              className="w-[134px] h-[40px] font-inter font-bold text-base text-black leading-6  flex justify-center items-center mx-auto border border-textColor rounded-t-[20px] xs:w-[240px] xs:button-text xs:h-[50px]"
+              arrowStyle='w-2 h-2 ml-[3px] xs:w-5 xs:h-5 xs:ml-7'
             />
           </div>
           {/* end of counselling */}
@@ -118,8 +118,8 @@ const Home: NextPage = () => {
             <Button
               href="/"
               title="Learn More"
-              className="w-[134px] h-[40px] font-inter font-bold text-base text-black leading-6 flex justify-center items-center mx-auto border border-textColor rounded-t-[20px] xs:w-[240px] xs:button-text xs:h-[50px]"
-              arrowStyle='w-[11px] h-[11px] ml-[3px] xs:w-5 xs:h-5 xs:ml-7'
+              className="w-[134px] h-[40px] font-inter font-bold text-base text-black leading-6  flex justify-center items-center mx-auto border border-textColor rounded-t-[20px] xs:w-[240px] xs:button-text xs:h-[50px]"
+              arrowStyle='w-2 h-2 ml-[3px] xs:w-5 xs:h-5 xs:ml-7'
             />
           </div>
           {/* end of coaching */}
@@ -137,8 +137,8 @@ const Home: NextPage = () => {
             <Button
               href="/"
               title="Learn More"
-              className="w-[134px] h-[40px] font-inter font-bold text-base text-black leading-6 flex justify-center items-center mx-auto border border-textColor rounded-t-[20px] xs:w-[240px] xs:button-text xs:h-[50px]"
-              arrowStyle='w-[11px] h-[11px] ml-[3px] xs:w-5 xs:h-5 xs:ml-7'
+              className="w-[134px] h-[40px] font-inter font-bold text-base text-black leading-6  flex justify-center items-center mx-auto border border-textColor rounded-t-[20px] xs:w-[240px] xs:button-text xs:h-[50px]"
+              arrowStyle='w-2 h-2 ml-[3px] xs:w-5 xs:h-5 xs:ml-7'
             />
           </div>
           {/* end of workshops */}

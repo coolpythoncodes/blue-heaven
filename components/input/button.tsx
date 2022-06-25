@@ -19,8 +19,8 @@ const Button = ({ href, title, arrowStyle, arrowColor, btnType = "primary", ...r
         <Link href={href}  >
             <a className={`border border-textColor rounded-t-[20px] text-textColor flex items-center w-[211px] py-[10px] justify-center button-text ${btnType === "primary" ? 'bg-lightBlueTertiary' : 'bg-white'}`} {...rest}>
                 {title}
-                <div className={`ml-[15px] h-5 w-5 ${arrowStyle}`}>
-                    <Image src={arrowColor === 'white' ? arrowWhite : arrow} alt="" layout="responsive" />
+                <div className={`relative ${arrowStyle}`}>
+                    <Image src={arrowColor === 'white' ? arrowWhite : arrow} alt="" layout="fill" className="object-contain"/>
                 </div>
             </a>
         </Link>
