@@ -210,7 +210,7 @@ const Home: NextPage = () => {
       {/* End of Appointment */}
 
       {/* Contact */}
-      <section className="layout-container mt-20 text-textColor max-w-[790px] pb-[401px]">
+      <section className="layout-container mt-20 text-textColor max-w-[790px] pb-[247px] md:pb-[519px]">
         <div className="text-center">
           <h2 className={`mob-h2 md:heading-2 md:mb-[21px] ${styles.jeko_regular}`}>Contact</h2>
           <h3 className="font-inter body-text px-5 md:heading-3 md:mb-[54px] md:px-10">
