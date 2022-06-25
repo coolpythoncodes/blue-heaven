@@ -1,8 +1,9 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
 import Layout from '../components/layout'
-import { footer_contact } from '../utils/data'
+import { footer_contact, reviews } from '../utils/data'
 import Button from '../components/input/button'
+import WhoWeAreSlide from '../components/whoWeAreSlide'
 
 // css styles
 import styles from '../styles/Home.module.css'
@@ -23,7 +24,8 @@ import coloredCircle from "../public/assets/images/colored-circles.svg"
 import starShape from "../public/assets/images/star-shape.svg"
 import yellowBlackFlower from "../public/assets/images/yellow-black-flower.svg"
 import pointingArrow from "../public/assets/arrows/pointing-arrow.svg"
-import WhoWeAreSlide from '../components/whoWeAreSlide'
+import Review from '../components/review'
+
 
 const Home: NextPage = () => {
   return (
@@ -155,7 +157,7 @@ const Home: NextPage = () => {
           <p className="body-text font-inter xs:heading-3">BHCC aims to support individuals and families to develop new skills and take ownership of their lives following a program that is tailor-made to match everyone's needs. </p>
         </div>
         <div className="mt-[19px] mb-[41px] h-[131px] w-[61px] relative left-[230px] xs:left-[300px] md:left-[450px] lg:left-[600px] xl:left-[700px]">
-          <Image src={pointingArrow} alt="" layout='fill'/>
+          <Image src={pointingArrow} alt="" layout='fill' />
         </div>
         <WhoWeAreSlide />
       </section>
@@ -182,6 +184,10 @@ const Home: NextPage = () => {
         </div>
       </section>
 
+      {/* Reviews */}
+      <Review />
+      {/* end of Reviews */}
+
       {/* Appointment */}
       <section className="layout-container mt-[62px] text-textColor md:mt-[118px]">
         <div className="relative border border-black rounded-t-[100px] h-[286px] w-[286px] mx-auto pt-[42px] text-center md:w-[600px] md:h-[556px] md:pt-[136px]">
@@ -201,6 +207,7 @@ const Home: NextPage = () => {
           />
         </div>
       </section>
+      {/* End of Appointment */}
 
       {/* Contact */}
       <section className="layout-container mt-20 text-textColor max-w-[790px] pb-[401px]">
