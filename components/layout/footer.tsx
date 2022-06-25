@@ -10,7 +10,7 @@ import Button from "../input/button";
 const Footer = () => {
     const year = new Date().getFullYear();
     return (
-        <footer className="relative flex-shrink-0">
+        <footer className="relative flex-shrink-0 bg-creamSecondaryBg">
             <div className="absolute -top-[110px] right-[65px] w-[198px] h-[127px] md:w-[499px] md:h-[320px] md:-top-[280px] md:right-[130px] lg:right-[180px]">
                 <Image src={people} alt="" layout="responsive"/>
             </div>
