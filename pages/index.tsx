@@ -154,6 +154,7 @@ const Home: NextPage = () => {
               <Image src={yellowBlackFlower} alt="" layout="responsive" />
             </div>
           </h2>
+          <p className="body-text font-inter xs:heading-3">BHCC aims to support individuals and families to develop new skills and take ownership of their lives following a program that is tailor-made to match everyone&rsquo;s needs. </p>
         </div>
         <div className="mt-[19px] mb-[41px] h-[131px] w-[61px] relative left-[230px] xs:left-[300px] md:left-[450px] lg:left-[600px] xl:left-[700px]">
           <Image src={pointingArrow} alt="" layout='fill' />
@@ -170,6 +171,7 @@ const Home: NextPage = () => {
             </div>
             <div className="text-center mx-auto w-[274px] lg:w-[365px] md:mx-0">
               <h2 className={`mob-h2 text-creamSecondaryBg lg:heading-2 ${styles.jeko_regular}`}>Coaching</h2>
+              <p className="body-text font-inter text-white mt-[14px] mb-[34px] mx-auto">BHCC aims to support individuals and families to develop new skills and take ownership of their lives by following a tailor-made program to match everyone&rsquo;s needs. </p>
               <Button
                 href="/"
                 title="Learn More"
