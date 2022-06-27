@@ -2,6 +2,10 @@
 import family from "../public/assets/images/family.svg";
 import couples from "../public/assets/images/couples.svg";
 import girl from "../public/assets/review/girl.svg";
+import michel from '../public/assets/clinicians/michel.svg'
+import michelCartoon from '../public/assets/clinicians/michel-cartoon.svg'
+import viviane from '../public/assets/clinicians/viviane.svg'
+import vivianeCartoon from '../public/assets/clinicians/viviane-cartoon.png'
 
 
 export const navLinks = [
@@ -84,13 +88,13 @@ export const whoWeArDetails = [
         heading: 'Family Therapy',
         description: 'At BHCC, we propose different therapeutic approaches that will allow family members to express themselves in a unique manner considering their ages and the family dynamic. Sessions might include different parts of the family unit by focusing on various collaborative goals of the family.',
         image: family,
-        href:'/'
+        href: '/'
     },
     {
         heading: 'Couple’s Therapy',
         description: 'Lymphatic drainage vitamins and supplements wellness spa boost your mood metaboloism boosting superpowder self love bone broth nutrient dense. Irritable bowel syndrome hyaluronic acid glow serum',
         image: couples,
-        href:'/'
+        href: '/'
     }
 ]
 
@@ -112,7 +116,43 @@ export const reviews = [
     },
 ]
 
+export const services = [
+    {
+        heading: 'Individual Counselling',
+        description: 'Blue Haven Counselling and Coaching (BHCC) offers Individual counselling and psychotherapy services to support children, adolescents, or adults. Therefore, clients have the unique opportunity to collaborate with the therapist on their goals in a supportive therapeutic environment with a personalized treatment plan.',
+        price: '$150',
+        href: '/',
+    },
+    {
+        heading: 'Couples Therapy',
+        description: 'Blue Haven Counselling and Coaching (BHCC) also offers therapy services for couples dealing with a wide range of issues that emerge in relationships between partners. Also, we encourage couples to enter Therapy to strengthen their relationship by building strong connections.',
+        price: '$150',
+        href: '/',
+    },
+    {
+        heading: 'Individual Counselling',
+        description: 'Blue Haven Counselling and Coaching (BHCC) also addresses all family issues, relationships, communication patterns and interactions between family members. We believe that families that receive ongoing support through different phases of the relationship have a better chance of strengthening the family relationships and functioning. ',
+        price: '$150',
+        href: '/',
+    },
+]
 
+export const cliniciansDetails = [
+    {
+        name: 'Michel Ndiom',
+        role: "Founder",
+        bio: "Michel Ndiom holds a Bachelor of Arts in English and French and a Bachelor of Leadership. He graduated with a Bachelor of Social Work from UVIC and a Master of Social Worker from the University of the Fraser. Michel formerly works at the Ministry of Children and Family Development but works at Vancouver General Hospital and BC Children's Hospital as a Clinical Social Worker. Michel is registered with the BC College of Social Workers and the BC Association of Social Workers.",
+        image: michel,
+        cartoon: michelCartoon,
+    },
+    {
+        name: 'Viviane Ndiom',
+        role: "Co-Founder",
+        bio: "Viviane Njuitchou holds a Bachelor of Arts in English and French, a Bachelor of Social Worker and a Master of Social Worker. She works with the Ministry of Children and Family Development and Ridge Meadows Hospital. Her approach is warm, person-centred & trauma-informed. She is excited to provide Counselling to clients she can identify with and advocate for due to the various systemic discrimination they face in accessing mental health. Viviane is registered with the BC College of Social Workers and the BC Association of Social Workers.",
+        image: viviane,
+        cartoon: vivianeCartoon,
+    },
+]
 
 
 // // Set this to 0 for slides to directly overlap

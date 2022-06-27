@@ -8,6 +8,7 @@ import SideBar from "./sidebar";
 
 // Images
 import logo from "../../public/assets/logo/logo_with_text.svg";
+import logoSecondary from "../../public/assets/logo/logo_with_text_secondary.svg";
 import clip from "../../public/assets/navbar/clip.svg";
 
 type Props = {
@@ -19,6 +20,10 @@ const NavBar = ({ navBarColor }: Props) => {
     const [showServicesCategories, setShowServicesCategories] = useState(false)
     const [hover, setHover] = useState(-1)
     const toggleMenu = () => setIsOpen(!isOpen);
+    const handleMouseLeave = () => {
+        setShowServicesCategories(false)
+        setHover(-1)
+    };
     return (
         <>
             <SideBar
@@ -29,11 +34,11 @@ const NavBar = ({ navBarColor }: Props) => {
                 <div className="layout-container flex items-center justify-between border-creamSecondaryBg md:pb-3 lg:border-b">
                     {/* Logo */}
                     <div className="">
-                        <Image src={logo} alt="" />
+                        <Image src={navBarColor ? logo : logoSecondary} alt="" />
                     </div>
 
                     {/* nav links */}
-                    <ul className="hidden lg:flex body-text text-white space-x-10 font-inter">
+                    <ul className={`hidden lg:flex body-text space-x-10 font-inter ${navBarColor ? 'text-white' : 'text-textColor'}`}>
                         {
                             navLinks.map((value, index) => (
                                 <li key={index}>
@@ -45,7 +50,7 @@ const NavBar = ({ navBarColor }: Props) => {
                                                 </span>
                                                 {
                                                     showServicesCategories &&
-                                                    <div onMouseLeave={() => setShowServicesCategories(false)} className={`absolute top-8 -left-12 h-[180px] w-[163px] rounded-t-[50px] grid place-items-center z-50 text-textColor body-text ${navBarColor ? 'bg-creamSecondaryBg' : `${navBarColor}`}`}>
+                                                    <div onMouseLeave={handleMouseLeave} className={`absolute top-8 -left-12 h-[180px] w-[163px] rounded-t-[50px] grid place-items-center z-50 text-textColor body-text ${navBarColor ? 'bg-creamSecondaryBg' : 'bg-lightBlueTertiary'}`}>
                                                         <ul className="space-y-6">
                                                             {
                                                                 value?.categories?.map((category, index) => (
