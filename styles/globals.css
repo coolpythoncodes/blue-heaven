@@ -56,8 +56,4 @@ body {
 	height: 100%;
 }
 
-.services:nth-child(3) {
-	background-color: red;
-	align-self: center;
-}
 

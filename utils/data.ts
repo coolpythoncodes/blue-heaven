@@ -3,9 +3,7 @@ import family from "../public/assets/images/family.svg";
 import couples from "../public/assets/images/couples.svg";
 import girl from "../public/assets/review/girl.svg";
 import michel from '../public/assets/clinicians/michel.svg'
-import michelCartoon from '../public/assets/clinicians/michel-cartoon.svg'
-import viviane from '../public/assets/clinicians/viviane.svg'
-import vivianeCartoon from '../public/assets/clinicians/viviane-cartoon.png'
+import vivianeMobile from '../public/assets/clinicians/viviane-mobile.svg'
 
 
 export const navLinks = [
@@ -143,14 +141,12 @@ export const cliniciansDetails = [
         role: "Founder",
         bio: "Michel Ndiom holds a Bachelor of Arts in English and French and a Bachelor of Leadership. He graduated with a Bachelor of Social Work from UVIC and a Master of Social Worker from the University of the Fraser. Michel formerly works at the Ministry of Children and Family Development but works at Vancouver General Hospital and BC Children's Hospital as a Clinical Social Worker. Michel is registered with the BC College of Social Workers and the BC Association of Social Workers.",
         image: michel,
-        cartoon: michelCartoon,
     },
     {
         name: 'Viviane Ndiom',
         role: "Co-Founder",
         bio: "Viviane Njuitchou holds a Bachelor of Arts in English and French, a Bachelor of Social Worker and a Master of Social Worker. She works with the Ministry of Children and Family Development and Ridge Meadows Hospital. Her approach is warm, person-centred & trauma-informed. She is excited to provide Counselling to clients she can identify with and advocate for due to the various systemic discrimination they face in accessing mental health. Viviane is registered with the BC College of Social Workers and the BC Association of Social Workers.",
-        image: viviane,
-        cartoon: vivianeCartoon,
+        image: vivianeMobile,
     },
 ]
 

@@ -30,7 +30,7 @@ const Home: NextPage = () => {
   return (
     <Layout navBarColor="bg-blueBg">
       {/* Hero Section */}
-      <header className="bg-blueBg text-creamSecondaryBg pt-10 h-[70vh] xxs:h-[55vh] xs:h-[70vh] lg:h-screen">
+      <header className="bg-blueBg text-creamSecondaryBg m-0 pt-10 h-[70vh] xxs:h-[55vh] xs:h-[70vh] lg:h-screen">
         <div className="layout-container xs:w-4/5 md:w-11/12  xl:relative">
           <h1 className={`mob-h1 text-center md:heading-1 xl:w-[800px] xl:mx-auto ${styles.jeko_regular}`}>
             <span className="flex items-center justify-between xl:inline">

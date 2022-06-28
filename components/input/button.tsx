@@ -17,10 +17,10 @@ type Props = {
 const Button = ({ href, title, arrowStyle, arrowColor, btnType = "primary", ...rest }: Props) => {
     return (
         <Link href={href}  >
-            <a className={`border border-textColor rounded-t-[20px] text-textColor flex items-center w-[211px] py-[10px] justify-center button-text ${btnType === "primary" ? 'bg-lightBlueTertiary' : 'bg-white'}`} {...rest}>
+            <a className={`w-[133px] h-[50px] border border-textColor body-text font-inter flex items-center justify-center mx-auto rounded-t-[20px] md:w-[211px] md:button-text ${btnType === "primary" ? 'bg-lightBlueTertiary hover:bg-creamSecondaryBg' : 'bg-white hover:bg-lightBlueTertiary'}`} {...rest}>
                 {title}
                 <div className={`relative ${arrowStyle}`}>
-                    <Image src={arrowColor === 'white' ? arrowWhite : arrow} alt="" layout="fill" className="object-contain"/>
+                    <Image src={arrowColor === 'white' ? arrowWhite : arrow} alt="" layout="fill" className="object-contain" />
                 </div>
             </a>
         </Link>
