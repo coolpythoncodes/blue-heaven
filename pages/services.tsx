@@ -4,6 +4,7 @@ import { cliniciansDetails, services } from "../utils/data"
 import Button from "../components/input/button"
 import Review from "../components/review"
 import Contact from "../components/sections/Contact"
+import Clinicians from "../components/sections/Clinicians"
 
 // css styles
 import styles from '../styles/Home.module.css'
@@ -15,6 +16,7 @@ import coaching from "../public/assets/images/coaching.png"
 import starShape from "../public/assets/images/star-shape.svg"
 import twoWomen from "../public/assets/images/two-women.png"
 import three from "../public/assets/hero/3.svg"
+
 
 
 
@@ -53,33 +55,8 @@ const Services = () => {
             </section>
             {/* end of hero */}
 
-            {/* Meet the Clinicians */}
-            <section className="layout-container text-center text-textColor mt-[81px]">
-                <h2 className={`mob-h2  mb-[22px] md:heading-2 md:mb-[60px] lg:heading-1 ${styles.jeko_regular}`}>Meet the Clinicians</h2>
-                <div className="flex flex-col space-y-[62px]">
-                    {
-                        cliniciansDetails.map((value, index) => (
-                            <div key={index} className="lg:flex lg:items-center">
-                                <div className="flex justify-center items-end">
-                                    <div className="relative w-[205px] h-[235px] lg:w-[279px] lg:h-[320px]">
-                                        <Image src={value.image} alt="" layout="fill" className="object-contain" />
-                                    </div>
-                                    <div className="relative w-[45px] h-[119px] error">
-                                        <Image src={value.cartoon} alt="" layout="fill" className="object-contain" />
-                                    </div>
-                                </div>
-                                <div className="xs:w-4/5 xs:mx-auto lg:w-[454px]">
-                                    <p className={`body-text font-inter mt-2 md:heading-3 md:${styles.jeko_regular}`}>{value.name}</p>
-                                    <p className={`body-text fonter-inter md:heading-3 ${styles.jeko_regular}`}>{value.role}</p>
-                                    <p className="mt-5 text-center body-text font-inter md:heading-3">{value.bio}</p>
-                                </div>
-                            </div>
-                        ))
-                    }
-                </div>
-            </section>
-
-            <Review />
+            <Clinicians /> 
+             <Review />
 
             {/* Other services */}
             <section className="layout-container mt-20">
