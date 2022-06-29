@@ -15,7 +15,7 @@ import coaching from "../public/assets/images/coaching.png"
 import coloredCircle from "../public/assets/images/colored-circles.svg"
 import starShape from "../public/assets/images/star-shape.svg"
 import whoOne from "../public/assets/images/who1.svg"
-import { goals } from '../utils/data'
+import GoalsSlide from '../components/goalslide'
 
 
 
@@ -36,20 +36,7 @@ const About = () => {
             </section>
 
             {/* Goals */}
-            <section className="layout-container mt-[194px]">
-                <div className="space-y-[50px] md:mx-auto md:w-4/5 xl:w-[1083px] error">
-                    {
-                        goals.map((value, index) => (
-                            <div key={index} className="flex items-center space-x-[38px]">
-                                <div className="relative w-[150px] h-[103px] xl:w-[81px] xl:h-[93px] error">
-                                    <Image src={value.icon} alt="" layout="fill" className="object-contain"/>
-                                </div>
-                                <p className="heading-3 text-textColor">{value.goal}</p>
-                            </div>
-                        ))
-                    }
-                </div>
-            </section>
+            <GoalsSlide />
             <Clinicians />
             <section className="layout-container">
                 <h2 className={`mob-h2 text-center mt-10 mb-8 md:heading-2 lg:mt-20 ${styles.jeko_regular}`}>
