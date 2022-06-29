@@ -4,6 +4,10 @@ import couples from "../public/assets/images/couples.svg";
 import girl from "../public/assets/review/girl.svg";
 import michel from '../public/assets/clinicians/michel.svg'
 import vivianeMobile from '../public/assets/clinicians/viviane-mobile.svg'
+import goalOne from '../public/assets/images/goal-1.svg'
+import goalTwo from '../public/assets/images/goal-2.svg'
+import goalThree from '../public/assets/images/goal-3.svg'
+import goalFour from '../public/assets/images/goal-4.svg'
 
 
 export const navLinks = [
@@ -13,7 +17,7 @@ export const navLinks = [
     },
     {
         text: "About Us",
-        to: '/'
+        to: '/about'
     },
     {
         text: "Services",
@@ -49,7 +53,7 @@ export const footer_links = [
             },
             {
                 text: "About Us",
-                to: "/"
+                to: "/about"
             },
             {
                 text: "FAQs",
@@ -147,6 +151,25 @@ export const cliniciansDetails = [
         role: "Co-Founder",
         bio: "Viviane Njuitchou holds a Bachelor of Arts in English and French, a Bachelor of Social Worker and a Master of Social Worker. She works with the Ministry of Children and Family Development and Ridge Meadows Hospital. Her approach is warm, person-centred & trauma-informed. She is excited to provide Counselling to clients she can identify with and advocate for due to the various systemic discrimination they face in accessing mental health. Viviane is registered with the BC College of Social Workers and the BC Association of Social Workers.",
         image: vivianeMobile,
+    },
+]
+
+export const goals = [
+    {
+        goal:"BHCC aims to support individuals and families to develop new skills and take ownership of their lives following a program that is tailor-made to match everyone's needs.",
+        icon: goalOne,
+    },
+    {
+        goal:"BHCC's philosophy is based on the belief that one of us is unique and has particular challenges and aspirations, and our coaching program reflects that uniqueness.",
+        icon: goalTwo,
+    },
+    {
+        goal:"BHCC works with the organization following Integral Theory, highlighting personal effectiveness, leadership development and communications courses that I design and facilitate.",
+        icon: goalThree,
+    },
+    {
+        goal:"Thus, BHCC's services will help develop new skills and improve existing and allow clients to see blockages and limiting factors in their day-to-day interaction with their surroundings.",
+        icon: goalFour,
     },
 ]
 

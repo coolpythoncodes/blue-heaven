@@ -3,6 +3,9 @@ import Image from 'next/image'
 import Layout from '../components/layout'
 import Button from '../components/input/button'
 import WhoWeAreSlide from '../components/whoWeAreSlide'
+import Review from '../components/review'
+import Contact from '../components/sections/Contact'
+import Appointment from '../components/sections/Appointment'
 
 // css styles
 import styles from '../styles/Home.module.css'
@@ -21,9 +24,6 @@ import coloredCircle from "../public/assets/images/colored-circles.svg"
 import starShape from "../public/assets/images/star-shape.svg"
 import yellowBlackFlower from "../public/assets/images/yellow-black-flower.svg"
 import pointingArrow from "../public/assets/arrows/pointing-arrow.svg"
-import Review from '../components/review'
-import Contact from '../components/sections/Contact'
-import Appointment from '../components/sections/Appointment'
 
 
 const Home: NextPage = () => {
