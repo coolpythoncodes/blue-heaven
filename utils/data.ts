@@ -40,7 +40,7 @@ export const navLinks = [
     },
     {
         text: "FAQ",
-        to: '/'
+        to: '/faq'
     },
 
 ]
@@ -59,7 +59,7 @@ export const footer_links = [
             },
             {
                 text: "FAQs",
-                to: "/"
+                to: "/faq"
             }
         ]
     },

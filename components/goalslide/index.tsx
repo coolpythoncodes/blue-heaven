@@ -34,6 +34,7 @@ const GoalsSlide = () => {
         <section className="mt-[82px] lg:mt-[100px]">
             <h2 className="layout-container mob-h2 text-textColor mb-2 md:heading-1 md:text-center">Goals</h2>
             <div className="md:mx-auto md:w-4/5  xl:w-[1083px]">
+                {/* @ts-ignore */}
                 <Slider {...settings} ref={sliderRef}>
                     {
                         goals.map((value, index) => (

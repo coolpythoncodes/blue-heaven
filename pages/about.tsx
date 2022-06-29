@@ -24,7 +24,7 @@ import people from "../public/assets/about/about-people-group.png"
 
 const About = () => {
     return (
-        <Layout>
+        <Layout title="About us">
             <section className="layout-container pt-[65px] lg:pt-[100px]">
                 <div className="relative border border-black rounded-t-[100px] w-[325px] h-[255px] pt-[71px] pr-6 pl-[31px] mx-auto md:h-[185px] md:w-4/5 lg:px-[40px] lg:rounded-t-[200px] lg:h-[310px] lg:pt-[123px] xl:px-[68px] xl:w-[1080px]">
                     <div className="absolute w-[68px] h-[70px] -right-3 -top-[14px] xs:w-[81px] xs:h-[83px] xs:-top-7 lg:w-[132px] lg:h-[135px] lg:right-10 lg:-top-[70px]">
