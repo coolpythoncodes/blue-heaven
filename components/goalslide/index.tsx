@@ -31,16 +31,19 @@ const GoalsSlide = () => {
     const next = () => sliderRef?.current?.slickNext();
     const prev = () => sliderRef?.current?.slickPrev();
     return (
-        <section className="mt-[82px] md:mt-[194px]">
-            <h2 className="layout-container mob-h2 text-textColor mb-2 md:hidden">Goals</h2>
+        <section className="mt-[82px] lg:mt-[100px]">
+            <h2 className="layout-container mob-h2 text-textColor mb-2 md:heading-1 md:text-center">Goals</h2>
             <div className="md:mx-auto md:w-4/5  xl:w-[1083px]">
                 <Slider {...settings} ref={sliderRef}>
                     {
                         goals.map((value, index) => (
                             <div key={index} className="md:flex md:items-center md:my-[37px] md:space-x-[38px]">
-                                <div className="relative mx-auto mb-5 w-[58px] h-[67px] md:mb-0 md:mx-0 md:w-[150px] md:h-[103px] xl:w-[81px] xl:h-[93px]">
-                                    <Image src={value.icon} alt="" layout="fill" className="object-contain" />
+                                <div className="mx-auto mb-5 w-[58px] h-[67px] md:mb-0 md:mx-0 md:w-[150px] md:h-[103px] ">
+                                    <Image src={value.icon} alt="" layout="responsive" />
                                 </div>
+                                {/* <div className="relative mx-auto mb-5 w-[58px] h-[67px] md:mb-0 md:mx-0 md:w-[150px] md:h-[103px] xl:w-[81px] xl:h-[93px]">
+                                    <Image src={value.icon} alt="" layout="fill" className="object-contain" />
+                                </div> */}
                                 <p className="caption px-2 font-inter text-center text-textColor md:text-left md:px-0 md:heading-3">{value.goal}</p>
                             </div>
                         ))

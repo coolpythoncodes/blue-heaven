@@ -3,6 +3,8 @@ import Button from '../components/input/button'
 import Layout from '../components/layout'
 import Clinicians from '../components/sections/Clinicians'
 import Appointment from '../components/sections/Appointment'
+import GoalsSlide from '../components/goalslide'
+import { statement } from '../utils/data'
 
 // css styles
 import styles from '../styles/Home.module.css'
@@ -15,7 +17,7 @@ import coaching from "../public/assets/images/coaching.png"
 import coloredCircle from "../public/assets/images/colored-circles.svg"
 import starShape from "../public/assets/images/star-shape.svg"
 import whoOne from "../public/assets/images/who1.svg"
-import GoalsSlide from '../components/goalslide'
+import people from "../public/assets/about/about-people-group.png"
 
 
 
@@ -31,7 +33,30 @@ const About = () => {
                     <div className="hidden w-[150px] h-[71px] md:block md:absolute -top-5 -left-5 lg:w-[215px] lg:-left-1">
                         <Image src={whoOne} alt="" layout="responsive" />
                     </div>
-                    <h2 className={`mob-h2 text-center lg:text-4xl ${styles.jeko_regular}`}> <span className="text-lightBlueTertiary">Our Brand</span>: Discover resilience, discover yourself and Connect to the world </h2>
+                    <h2 className={`mob-h2 text-center lg:text-4xl xl:heading-2 ${styles.jeko_regular}`}> <span className="text-lightBlueTertiary">Our Brand</span>: Discover resilience, discover yourself and Connect to the world </h2>
+                </div>
+            </section>
+
+            <div className="layout-container mt-[41px] mb-[6px] w-[322px] md:w-4/5 lg:w-[800px]">
+                <Image src={people} alt="" layout="responsive" />
+            </div>
+
+            {/* mission and vision */}
+            <section className="layout-container lg:mt-[69px]">
+                <div className="lg:flex lg:flex-col lg:space-y-[100px]">
+                    {
+                        statement.map((item, index) => (
+                            <div key={index} className={`w-[322px] mx-auto md:w-4/5 lg:w-11/12 lg:flex lg:justify-between lg:items-start xl:w-[1081] xl:h-[450px] ${index === 1 ? 'xl:items-center' : ''}`}>
+                                <div className="text-center lg:w-[500px] xl:w-[635px]">
+                                    <h2 className={`mob-h2 text-lightBlueTertiary md:heading-1 ${styles.jeko_regular}`}>{item.name}</h2>
+                                    <p className="body-text font-inter md:heading-3">{item.description}</p>
+                                </div>
+                                <div className={`w-[181px] mx-auto mt-[55px] md:w-[314px] lg:mx-0  ${index === 1 ? 'hidden lg:block -order-1 lg:self-start' : 'mb-[53px] self-end'}`}>
+                                    <Image src={item.image} alt="" layout="responsive" />
+                                </div>
+                            </div>
+                        ))
+                    }
                 </div>
             </section>
 
@@ -39,7 +64,7 @@ const About = () => {
             <GoalsSlide />
             <Clinicians />
             <section className="layout-container">
-                <h2 className={`mob-h2 text-center mt-10 mb-8 md:heading-2 lg:mt-20 ${styles.jeko_regular}`}>
+                <h2 className={`mob-h2 text-center mt-10 mb-8 md:heading-2 lg:mt-[168px] ${styles.jeko_regular}`}>
                     Our personalized approach to {" "}
                     <span className="relative">
                         Care

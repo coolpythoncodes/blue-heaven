@@ -8,6 +8,8 @@ import goalOne from '../public/assets/images/goal-1.svg'
 import goalTwo from '../public/assets/images/goal-2.svg'
 import goalThree from '../public/assets/images/goal-3.svg'
 import goalFour from '../public/assets/images/goal-4.svg'
+import sittingManWoman from "../public/assets/about/sitting-man-woman.svg"
+
 
 
 export const navLinks = [
@@ -156,20 +158,33 @@ export const cliniciansDetails = [
 
 export const goals = [
     {
-        goal:"BHCC aims to support individuals and families to develop new skills and take ownership of their lives following a program that is tailor-made to match everyone's needs.",
+        goal: "BHCC aims to support individuals and families to develop new skills and take ownership of their lives following a program that is tailor-made to match everyone's needs.",
         icon: goalOne,
     },
     {
-        goal:"BHCC's philosophy is based on the belief that one of us is unique and has particular challenges and aspirations, and our coaching program reflects that uniqueness.",
+        goal: "BHCC's philosophy is based on the belief that one of us is unique and has particular challenges and aspirations, and our coaching program reflects that uniqueness.",
         icon: goalTwo,
     },
     {
-        goal:"BHCC works with the organization following Integral Theory, highlighting personal effectiveness, leadership development and communications courses that I design and facilitate.",
+        goal: "BHCC works with the organization following Integral Theory, highlighting personal effectiveness, leadership development and communications courses that I design and facilitate.",
         icon: goalThree,
     },
     {
-        goal:"Thus, BHCC's services will help develop new skills and improve existing and allow clients to see blockages and limiting factors in their day-to-day interaction with their surroundings.",
+        goal: "Thus, BHCC's services will help develop new skills and improve existing and allow clients to see blockages and limiting factors in their day-to-day interaction with their surroundings.",
         icon: goalFour,
+    },
+]
+
+export const statement = [
+    {
+        name: "Mission",
+        description: "To provide a holistic and trauma-informed approach to Individuals and families through a team of therapists that help them with the most competent, responsive, flexible and diverse services needed to address their concerns.",
+        image: sittingManWoman,
+    },
+    {
+        name: "Vision",
+        description: "To see individuals and families improve relationships, make healthy choices, and discover resilience in an environment that honours and nurtures their potential. We are eager to support you throughout your mental health and wellness journey towards connecting your power, cultivating your confidence, and increasing your peace of mind.",
+        image: sittingManWoman,
     },
 ]
 
