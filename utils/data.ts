@@ -188,6 +188,87 @@ export const statement = [
     },
 ]
 
+export const faq = [
+    {
+        heading:'Services',
+        // subheading: 'Coaching',
+        faq: [
+            {
+                id: 1,
+                question: "How many services do you offer?",
+                answer: "Cut education funding just took up surfing when I was a kid I got a free education lemme ask you this still saying the skinny prepaid funerals funding my kids.",
+            },
+            {
+                id: 2,
+                question: "How many services do you offer?",
+                answer: "Cut education funding just took up surfing when I was a kid I got a free education lemme ask you this still saying the skinny prepaid funerals funding my kids.",
+            },
+            {
+                id: 3,
+                question: "How many services do you offer?",
+                answer: "Cut education funding just took up surfing when I was a kid I got a free education lemme ask you this still saying the skinny prepaid funerals funding my kids.",
+            },
+            {
+                id: 4,
+                question: "How many services do you offer?",
+                answer: "Cut education funding just took up surfing when I was a kid I got a free education lemme ask you this still saying the skinny prepaid funerals funding my kids.",
+            },
+        ]
+    },
+    {
+        heading:'Bookings',
+        // subheading: 'Coaching',
+        faq: [
+            {
+                id: 5,
+                question: "How many services do you offer?",
+                answer: "Cut education funding just took up surfing when I was a kid I got a free education lemme ask you this still saying the skinny prepaid funerals funding my kids.",
+            },
+            {
+                id: 6,
+                question: "How many services do you offer?",
+                answer: "Cut education funding just took up surfing when I was a kid I got a free education lemme ask you this still saying the skinny prepaid funerals funding my kids.",
+            },
+            {
+                id: 7,
+                question: "How many services do you offer?",
+                answer: "Cut education funding just took up surfing when I was a kid I got a free education lemme ask you this still saying the skinny prepaid funerals funding my kids.",
+            },
+            {
+                id: 8,
+                question: "How many services do you offer?",
+                answer: "Cut education funding just took up surfing when I was a kid I got a free education lemme ask you this still saying the skinny prepaid funerals funding my kids.",
+            },
+        ]
+    },
+    {
+        heading:'Payments & Services',
+        // subheading: 'Coaching',
+        faq: [
+            {
+                id: 9,
+                question: "How many services do you offer?",
+                answer: "Cut education funding just took up surfing when I was a kid I got a free education lemme ask you this still saying the skinny prepaid funerals funding my kids.",
+            },
+            {
+                id: 10,
+                question: "How many services do you offer?",
+                answer: "Cut education funding just took up surfing when I was a kid I got a free education lemme ask you this still saying the skinny prepaid funerals funding my kids.",
+            },
+            {
+                id: 11,
+                question: "How many services do you offer?",
+                answer: "Cut education funding just took up surfing when I was a kid I got a free education lemme ask you this still saying the skinny prepaid funerals funding my kids.",
+            },
+            {
+                id: 12,
+                question: "How many services do you offer?",
+                answer: "Cut education funding just took up surfing when I was a kid I got a free education lemme ask you this still saying the skinny prepaid funerals funding my kids.",
+            },
+        ]
+    },
+]
+
 
 // // Set this to 0 for slides to directly overlap
 // let sliderOffset = 20;

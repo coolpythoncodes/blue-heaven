@@ -19,6 +19,7 @@ module.exports = {
         lightBlueTertiary: "#219EBC",
         textColor: "#333",
         creamSecondaryBg: "#EAE5D9",
+        gray2: "#4F4F4F",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
