@@ -30,7 +30,7 @@ const NavBar = ({ navBarColor }: Props) => {
                 isOpen={isOpen}
                 toggleMenu={toggleMenu}
             />
-            <nav className={`${navBarColor ? `${navBarColor}` : 'bg-creamSecondaryBg'} pt-5 pb-2`}>
+            <nav className={`fixed top-0 left-0 right-0 z-50 h-fit ${navBarColor ? `${navBarColor}` : 'bg-creamSecondaryBg'} pt-5`}>
                 <div className={`layout-container flex items-center border-b-0 justify-between md:pb-3 ${navBarColor ? 'lg:border-creamSecondaryBg' : 'lg:border-textColor'} lg:border-b`}>
                     {/* Logo */}
                     <div className="">

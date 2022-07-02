@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react"
+import Image from "next/image"
 import Layout from "../components/layout"
 import Appointment from "../components/sections/Appointment"
 import { faq } from "../utils/data"
@@ -9,13 +10,15 @@ import styles from '../styles/Home.module.css'
 // images
 import open from "../public/assets/faq/open.svg"
 import close from "../public/assets/faq/close.svg"
-import Image from "next/image"
 
 const Faq = () => {
     const [activeSection] = useState(0);
     const [activeIndex, setActiveIndex] = useState(0);
+    const [isElementVisible, setIsElementVisible] = useState<boolean>()
 
     const faqAnswerElement = useRef<HTMLDivElement>(null);
+    const faqHeaderElement = useRef<Element>(null);
+
 
     const _handleToggle = (id: number) => {
         setActiveIndex(id === activeIndex ? -1 : id);
@@ -30,6 +33,33 @@ const Faq = () => {
         setActiveIndex(1);
 
     }, [activeSection]);
+    console.log('is visible', isElementVisible)
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            const entry = entries[0];
+            setIsElementVisible(entry.isIntersecting);
+        })
+        if (faqHeaderElement.current) {
+            observer.observe(faqHeaderElement.current);
+        }
+
+    }, [])
+
+    // useEffect(() => {
+    //     const observer = new IntersectionObserver((entries) => {
+    //         const entry = entries[0];
+    //         console.log('entry', entry)
+    //         observer.observe(faqHeaderElement?.current);
+    //     }
+    //         //     entries.forEach((entry) => {
+    //         //         if (entry.isIntersecting) {
+    //         //             setActiveIndex(1);
+    //         //         }
+    //         //     });
+    //         // }, { threshold: 0.5 });
+
+    //     }, [])
     return (
         <Layout title="FAQ">
             <div className="md:layout-container md:grid md:grid-cols-2 md:pt-10 lg:pt-[65px] lg:mb-[164px]">
@@ -54,7 +84,7 @@ const Faq = () => {
                                 faq.map((value, index) => (
                                     <div key={index} className="">
                                         {/* faq heading */}
-                                        <div className={`h-[43px] border border-black rounded-t-[20px] bg-blueBg pt-[10px] pb-1 px-[21px] flex justify-between items-center mb-[31px] md:h-12 md:p-0 md:flex md:justify-center  ${value.heading.toLowerCase() === 'payments & services' ? 'lg:w-[260px]' : 'lg:w-[201px]'}`}>
+                                        <div ref={faqHeaderElement} className={`h-[43px] border border-black rounded-t-[20px] bg-blueBg pt-[10px] pb-1 px-[21px] flex justify-between items-center mb-[31px] md:h-12 md:p-0 md:flex md:justify-center  ${value.heading.toLowerCase() === 'payments & services' ? 'lg:w-[260px]' : 'lg:w-[201px]'}`}>
                                             <p className="body-text text-white font-inter md:text-xl lg:heading-3">{value.heading}</p>
                                             <div className="h-[25px] w-[25px] rounded-t-[10px] border border-black md:hidden"></div>
                                         </div>
