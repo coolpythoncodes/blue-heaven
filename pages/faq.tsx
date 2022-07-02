@@ -64,7 +64,7 @@ const Faq = () => {
         <Layout title="FAQ">
             <div className="md:layout-container md:grid md:grid-cols-2 md:pt-10 lg:pt-[65px] lg:mb-[164px]">
                 <div className="hidden w-full md:block lg:w-[420px]">
-                    <div className="flex flex-col space-y-[19px] sticky top-10">
+                    <div className="flex flex-col space-y-[19px] sticky top-[140px]">
                         {
                             faq.map((value, index) => (
                                 <div key={index} className="h-[43px] w:[200px]  border border-black rounded-t-[20px] pt-[10px] pb-1 px-[21px] flex justify-between items-center md:h-[61px]">
