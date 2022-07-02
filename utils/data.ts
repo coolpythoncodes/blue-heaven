@@ -190,7 +190,8 @@ export const statement = [
 
 export const faq = [
     {
-        heading:'Services',
+        id: '100',
+        heading: 'Services',
         // subheading: 'Coaching',
         faq: [
             {
@@ -216,7 +217,8 @@ export const faq = [
         ]
     },
     {
-        heading:'Bookings',
+        id: '200',
+        heading: 'Bookings',
         // subheading: 'Coaching',
         faq: [
             {
@@ -242,7 +244,8 @@ export const faq = [
         ]
     },
     {
-        heading:'Payments & Services',
+        id: '300',
+        heading: 'Payments & Services',
         // subheading: 'Coaching',
         faq: [
             {
