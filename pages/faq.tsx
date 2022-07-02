@@ -17,7 +17,7 @@ const Faq = () => {
     const [isElementVisible, setIsElementVisible] = useState<boolean>()
 
     const faqAnswerElement = useRef<HTMLDivElement>(null);
-    const faqHeaderElement = useRef<Element>(null);
+    const faqHeaderElement = useRef<HTMLDivElement>(null);
 
 
     const _handleToggle = (id: number) => {
