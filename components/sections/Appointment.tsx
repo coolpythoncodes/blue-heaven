@@ -23,7 +23,7 @@ const Appointment = () => {
                 <Button
                     href=""
                     title="Book Now"
-                    className="w-[133px] h-[50px] bg-lightBlueTertiary border border-textColor body-text font-inter flex items-center justify-center mx-auto rounded-t-[20px] md:w-[211px] md:button-text"
+                    className="w-[133px] h-[50px] bg-lightBlueTertiary border border-textColor body-text font-inter flex items-center justify-center mx-auto rounded-t-[20px] hover:bg-creamSecondaryBg md:w-[211px] md:button-text"
                     arrowStyle="h-[10px] w-[10px] ml-1 md:h-5 md:w-5 md:ml-[15px]"
                 />
             </div>

@@ -42,7 +42,7 @@ const WhoWeAreSlide = () => {
                                 <Button
                                     href={value.href}
                                     title="Book Now"
-                                    className="w-[133px] h-[50px] bg-lightBlueTertiary border border-textColor body-text font-inter flex items-center justify-center mx-auto rounded-t-[20px] xs:w-[211px] xs:button-text"
+                                    className="w-[133px] h-[50px] bg-lightBlueTertiary border border-textColor body-text font-inter flex items-center justify-center mx-auto rounded-t-[20px] hover:bg-creamSecondaryBg xs:w-[211px] xs:button-text"
                                     arrowStyle="h-[10px] w-[10px] ml-1 xs:h-5 xs:w-5 xs:ml-[15px]"
                                 />
                             </div>
