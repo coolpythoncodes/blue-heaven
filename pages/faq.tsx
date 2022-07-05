@@ -1,4 +1,4 @@
-import { createRef, SetStateAction, useEffect, useRef, useState } from "react"
+import { SetStateAction, useEffect, useRef, useState } from "react"
 import Image from "next/image"
 import Layout from "../components/layout"
 import Appointment from "../components/sections/Appointment"
@@ -30,27 +30,11 @@ const Faq = () => {
     const callback = (entries: any[]) => {
         entries.forEach((entry: { intersectionRatio: number; target: { getAttribute: (arg0: string) => SetStateAction<string> } }) => {
             if (entry.intersectionRatio > 0) {
-                // currentSection.current = entry.target.getAttribute('id')
-                // console.log(currentSection)
-                // console.log("activeFaq",activeFaq)
                 setActiveFaq(entry.target.getAttribute('id'))
-                // let id = entry.target.id;
-                // setActiveFaq(id);
-                // console.log("This is an ", entry)
             }
         })
     }
 
-    useEffect(() => {
-        const _faqSections = faqSections.current?.querySelectorAll(".faq-header");
-        // console.log(_faqSections)
-        // console.log("activeFaq",activeFaq)
-
-        const observer = new IntersectionObserver(callback,options);
-        _faqSections?.forEach(section => observer.observe(section))
-        // observer.observe(faqHeaderElement.current);
-
-    }, [])
 
     const _handleToggle = (id: number) => {
         setActiveIndex(id === activeIndex ? -1 : id);
@@ -60,6 +44,14 @@ const Faq = () => {
         if (id === activeIndex) return true
         else return false
     }
+
+    useEffect(() => {
+        const _faqSections = faqSections.current?.querySelectorAll(".faq-header");
+
+        const observer = new IntersectionObserver(callback, options);
+        _faqSections?.forEach(section => observer.observe(section))
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
 
     useEffect(() => {
         setActiveIndex(1);

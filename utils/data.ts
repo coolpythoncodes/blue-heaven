@@ -26,11 +26,11 @@ export const navLinks = [
         categories: [
             {
                 text: "Counselling",
-                to: '/'
+                to: '/counselling'
             },
             {
                 text: "Coaching",
-                to: '/'
+                to: '/coaching'
             },
             {
                 text: "Workshops",
@@ -191,82 +191,78 @@ export const statement = [
 export const faq = [
     {
         id: '100',
-        heading: 'Services',
+        heading: 'Coaching',
         // subheading: 'Coaching',
         faq: [
             {
                 id: 1,
-                question: "How many services do you offer?",
-                answer: "Cut education funding just took up surfing when I was a kid I got a free education lemme ask you this still saying the skinny prepaid funerals funding my kids.",
+                question: "What is Coaching?",
+                answer: "Personal Coaching is a non-therapeutic intervention where a person signs up with a coach to work together toward personal and professional goals. Coaching is experiential and implies intentional listening and navigation intervention conversations that focus on the following:",
             },
             {
                 id: 2,
-                question: "How many services do you offer?",
-                answer: "Cut education funding just took up surfing when I was a kid I got a free education lemme ask you this still saying the skinny prepaid funerals funding my kids.",
+                question: "What is the difference between a coach and a counsellor?",
+                answer: "Coaching and Counselling are different tools that apply in different situations. Counselling delves into an individual's past to help make the present better. Counselling helps the Individual improve any identified problem that, if uncorrected, may derail their ability to succeed or even stay on course with life goals. Coaching focuses on the present to work towards a bright future. It increases performance to greater heights and does not necessarily indicate that the Individual has an issue. ",
             },
             {
                 id: 3,
-                question: "How many services do you offer?",
-                answer: "Cut education funding just took up surfing when I was a kid I got a free education lemme ask you this still saying the skinny prepaid funerals funding my kids.",
+                question: "Can you access simultaneously both coaching and counselling?",
+                answer: "Yes, depending on where you are in your life. Both Counselling and Coaching help you to be more resilient. They both want you to find answers that work for you. Both Coaching and Counselling can help you identify and work towards life goals. They work to help you move forward in your career, relationships, and home life.",
             },
             {
                 id: 4,
-                question: "How many services do you offer?",
-                answer: "Cut education funding just took up surfing when I was a kid I got a free education lemme ask you this still saying the skinny prepaid funerals funding my kids.",
+                question: "What should I expect from coaching?",
+                answer: "During a session, your Coach will help you identify and define your goal and what you want to accomplish or change. Then, your coach will provide feedback to motivate you and enable you to move forward with the intent of success and personal growth. The Coach will listen with intent and ask questions that could be challenging for you to develop a clear vision of what you want the change to encompass.",
+            },
+            {
+                id: 5,
+                question: "What is the difference between coaching and consulting?",
+                answer: "Coaching requires developing the client's ability to solve a problem using various tools, such as goal setting and accountability. However, consulting involves helping the client solve their problems. Coaching is often the preferred tool when clients need support with behavioural changes, such as improving their time management. Consultancy typically does not focus on behavioural change but looks at more industry-specific or technical topics.",
+            },
+            {
+                id: 6,
+                question: "Should we choose a consultant or a coach?",
+                answer: "If the change you want is at an individual level, you will likely benefit from the services of a coach. Company-wide changes may require a consultant's expertise. Consulting and Coaching also aim to achieve the same result, even though coaches primarily work with individuals while consultants work with businesses or groups of people.",
             },
         ]
     },
     {
         id: '200',
-        heading: 'Bookings',
+        heading: 'Counselling',
         // subheading: 'Coaching',
         faq: [
             {
-                id: 5,
-                question: "How many services do you offer?",
-                answer: "Cut education funding just took up surfing when I was a kid I got a free education lemme ask you this still saying the skinny prepaid funerals funding my kids.",
-            },
-            {
-                id: 6,
-                question: "How many services do you offer?",
-                answer: "Cut education funding just took up surfing when I was a kid I got a free education lemme ask you this still saying the skinny prepaid funerals funding my kids.",
-            },
-            {
                 id: 7,
-                question: "How many services do you offer?",
-                answer: "Cut education funding just took up surfing when I was a kid I got a free education lemme ask you this still saying the skinny prepaid funerals funding my kids.",
+                question: "What is Clinical Counselling?",
+                answer: "Clinical Counselling is the process by which a trained clinical counsellor helps you build insight and understanding into an area of emotional difficulty. It is how mental illness and emotional challenges are assessed and treated. Effective clinical Counselling promotes attitude and behaviour changes geared towards improving your overall functioning and general wellbeing. People generally seek Counselling to address challenges related to Life Transitions, Depression, Anxiety, Relationship Problems, Eating disorders, and Anger, among other areas of emotional difficulties.",
             },
             {
                 id: 8,
-                question: "How many services do you offer?",
-                answer: "Cut education funding just took up surfing when I was a kid I got a free education lemme ask you this still saying the skinny prepaid funerals funding my kids.",
+                question: "What should I expect from Counselling?",
+                answer: "Because Counselling involves dealing with emotional hardship, there are benefits and risks to engaging in the counselling process. Some risks include feelings of discomfort (i.e. anxiety, sadness, frustration, etc.) In general, however, a client who actively participates in the counselling process often experiences benefits that include improved relationships and increased self-esteem—increased coping skills and overall wellbeing.",
             },
+
         ]
     },
     {
         id: '300',
-        heading: 'Payments & Services',
+        heading: 'Sessions',
         // subheading: 'Coaching',
         faq: [
             {
                 id: 9,
-                question: "How many services do you offer?",
-                answer: "Cut education funding just took up surfing when I was a kid I got a free education lemme ask you this still saying the skinny prepaid funerals funding my kids.",
+                question: "What is my personal responsibility as a client?",
+                answer: "For Therapy to be successful, you must work towards goals agreed upon with your therapist, including therapeutic exercises assigned in and outside the office. You are also encouraged to work on assignments at home to increase your chances of therapeutic success.",
             },
             {
                 id: 10,
-                question: "How many services do you offer?",
-                answer: "Cut education funding just took up surfing when I was a kid I got a free education lemme ask you this still saying the skinny prepaid funerals funding my kids.",
+                question: "Which Therapist Should I choose?",
+                answer: "For the therapeutic process to be effective, you need to feel comfortable with the therapist. Our therapists have various experiences and approaches and are committed to one common goal, supporting you or your loved one. The best fit for you is the therapist you feel you connect with as you read about them, their approach and their experience. If you are still unsure, call one of us and speak to us directly. ",
             },
             {
                 id: 11,
-                question: "How many services do you offer?",
-                answer: "Cut education funding just took up surfing when I was a kid I got a free education lemme ask you this still saying the skinny prepaid funerals funding my kids.",
-            },
-            {
-                id: 12,
-                question: "How many services do you offer?",
-                answer: "Cut education funding just took up surfing when I was a kid I got a free education lemme ask you this still saying the skinny prepaid funerals funding my kids.",
+                question: "How long will my session be?",
+                answer: "Your session will generally be 50 -60 minutes unless otherwise arranged by you and your therapist.",
             },
         ]
     },
