@@ -8,6 +8,10 @@ import goalOne from '../public/assets/images/goal-1.svg'
 import goalTwo from '../public/assets/images/goal-2.svg'
 import goalThree from '../public/assets/images/goal-3.svg'
 import goalFour from '../public/assets/images/goal-4.svg'
+import intake from '../public/assets/images/intake.svg'
+import agreement from '../public/assets/images/agreement.svg'
+import evaluation from '../public/assets/images/evaluation.svg'
+import completion from '../public/assets/images/completion.svg'
 import sittingManWoman from "../public/assets/about/sitting-man-woman.svg"
 
 
@@ -185,6 +189,49 @@ export const statement = [
         name: "Vision",
         description: "To see individuals and families improve relationships, make healthy choices, and discover resilience in an environment that honours and nurtures their potential. We are eager to support you throughout your mental health and wellness journey towards connecting your power, cultivating your confidence, and increasing your peace of mind.",
         image: sittingManWoman,
+    },
+]
+
+export const coachingProgramFunction = [
+    {
+        id: '100',
+        heading: 'Intake',
+        more: [
+            {
+                image: intake,
+                text: "During the Intake, the focus will be on getting to know each other and defining the nature and the purpose of your call or contact with BHHC.",
+            }
+        ]
+    },
+    {
+        id: '200',
+        heading: 'Agreement',
+        more: [
+            {
+                image: agreement,
+                text: "Once we have identified and agreed on what to work on during the conversation. BHCC will make an offer to you and present specific developmental objectives specifically designed for you.",
+            }
+        ]
+    },
+    {
+        id: '300',
+        heading: 'Evaluation',
+        more: [
+            {
+                image: evaluation,
+                text: "Throughout this third phase, BHCC's staff engage with your regular practices in alignment with the sought goals. It is a crucial phase as we will celebrate victories and keep the momentum every two to three weeks.",
+            }
+        ]
+    },
+    {
+        id: '400',
+        heading: 'Completion',
+        more: [
+            {
+                image: completion,
+                text: "Our final conversation is called a Completion. We discuss your progress in your topic and how best to go beyond the coaching program.",
+            }
+        ]
     },
 ]
 

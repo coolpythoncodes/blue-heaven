@@ -20,11 +20,11 @@ import three from "../public/assets/hero/3.svg"
 
 
 
-const Services = () => {
+const Counselling = () => {
     return (
-        <Layout title="Services">
+        <Layout title="Services - Counselling">
             {/* hero  */}
-            <section className="layout-container md:pt-[70px]">
+            <section className="layout-container pt-[65px] md:pt-[70px]">
                 <h1 className={`text-center mob-h1 text-textColor mb-3 xxs:w-[327px] xxs:mx-auto xs:w-full md:heading-1 md:mb-[42px] lg:w-[900px] lg:pt-5 ${styles.jeko_regular}`}>Counselling for your self, family and partners</h1>
                 <div className="relative mb-10 h-[177px] w-[280px] mx-auto md:h-[351px] md:w-[380px] md:mb-[50px]">
                     <Image src={women} alt="" layout="fill" className="object-contain" />
@@ -107,4 +107,4 @@ const Services = () => {
     )
 }
 
-export default Services
+export default Counselling

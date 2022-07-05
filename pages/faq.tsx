@@ -87,9 +87,9 @@ const Faq = () => {
                                         {/* faq heading */}
                                         <div
                                             id={value.id}
-                                            className={`faq-header h-[43px] border border-black rounded-t-[20px] bg-blueBg pt-[10px] pb-1 px-[21px] flex justify-between items-center mb-[31px] md:h-12 md:p-0 md:flex md:justify-center  ${value.heading.toLowerCase() === 'payments & services' ? 'lg:w-[260px]' : 'lg:w-[201px]'}`}>
+                                            className="faq-header h-[43px] border border-black rounded-t-[20px] bg-blueBg pt-[10px] pb-1 px-[21px] flex justify-between items-center mb-[31px] md:h-12 md:p-0 md:flex md:justify-center md:w-[201px]">
                                             <p className="body-text text-white font-inter md:text-xl lg:heading-3">{value.heading}</p>
-                                            <div className={`h-[25px] w-[25px] rounded-t-[10px] border border-black ${value.id === activeFaq && 'bg-creamSecondaryBg'} md:hidden`}></div>
+                                            <div className={`h-[25px] w-[25px] rounded-t-[10px] border border-black ${value.id === activeFaq && 'bg-lightBlueTertiary'} md:hidden`}></div>
                                         </div>
 
                                         {/* question and answer */}
