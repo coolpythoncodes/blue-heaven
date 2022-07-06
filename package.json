@@ -9,11 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mailchimp/mailchimp_marketing": "^3.0.75",
+    "@types/mailchimp__mailchimp_marketing": "^3.0.5",
     "@types/react-slick": "^0.23.8",
     "next": "12.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-slick": "^0.29.0",
+    "react-toastify": "^9.0.5",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {

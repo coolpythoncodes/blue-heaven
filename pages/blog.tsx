@@ -1,8 +1,11 @@
 import Image from "next/image"
 import Layout from "../components/layout"
+import useSubscribeToNewsletter from "../hooks/useSubscribeToNewsletter"
+import { ToastContainer } from "react-toastify"
 
 // css styles
 import styles from '../styles/Home.module.css'
+import 'react-toastify/dist/ReactToastify.css';
 
 // images
 import comingSoon from "../public/assets/images/coming-soon.png"
@@ -12,9 +15,12 @@ import three from "../public/assets/hero/3.svg"
 
 
 
+
 const Blog = () => {
+    const { handleSubscribe, isLoading, inputElement } = useSubscribeToNewsletter()
     return (
         <Layout title="Blog">
+            <ToastContainer />
             <section className="layout-container pt-[65px] pb-[247px] md:pb-[508px] md:pt-10">
                 <div className="relative w-[194px] mx-auto h-[229px] md:w-[240px] md:h-[300px]">
                     <Image src={comingSoon} alt="" layout="fill" className="object-contain" />
@@ -26,15 +32,17 @@ const Blog = () => {
                     </div>
                 </div>
                 <h1 className={`mob-h1 text-textColor text-center md:heading-1 ${styles.jeko_regular}`}>Coming Soon</h1>
-                <form className="mt-[29px] md:mt-[50px] md:grid md:grid-cols-[2fr_1fr] md:gap-x-[22px] md:items-center md:w-11/12 md:mx-auto lg:w-[819px]">
+                <form onSubmit={handleSubscribe} className="mt-[29px] md:mt-[50px] md:grid md:grid-cols-[2fr_1fr] md:gap-x-[22px] md:items-center md:w-11/12 md:mx-auto lg:w-[819px]">
                     <div className="border border-black rounded-t-[20px] h-[49px] w-[234px] mx-auto px-5 py-[15px] md:h-[50px] md:w-full">
-                        <input type="text" placeholder="Your email address" className="text-gray3 bg-transparent block pl-4 w-full focus:outline-none font-inter text-base leading-[19px] font-medium md:button-text" />
+                        <input ref={inputElement} type="text" placeholder="Your email address" required className="text-gray3 bg-transparent block pl-4 w-full focus:outline-none font-inter text-base leading-[19px] font-medium md:button-text" />
                     </div>
-                    <button className="mt-[15px] flex items-center justify-center mx-auto rounded-t-[20px] w-[133px] h-[50px] border border-textColor bg-lightBlueTertiary body-text font-inter text-textColor hover:bg-transparent md:mt-0 md:w-[211px] md:button-text">
-                        Notify me
-                        <div className="relative w-[10px] h-[10px] ml-[10px] md:ml-5 md:h-5 md:w-5">
-                            <Image src={arrow} alt="" layout="fill" className="object-contain" />
-                        </div>
+                    <button disabled={isLoading} className="mt-[15px] disabled:cursor-not-allowed flex items-center justify-center mx-auto rounded-t-[20px] w-[133px] h-[50px] border border-textColor bg-lightBlueTertiary body-text font-inter text-textColor hover:bg-transparent md:mt-0 md:w-[211px] md:button-text">
+                        {
+                            isLoading ? <>Please wait...</> : <>Notify me
+                                <div className="relative w-[10px] h-[10px] ml-[10px] md:ml-5 md:h-5 md:w-5">
+                                    <Image src={arrow} alt="" layout="fill" className="object-contain" />
+                                </div></>
+                        }
                     </button>
                 </form>
             </section>
