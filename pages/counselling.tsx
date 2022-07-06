@@ -12,9 +12,9 @@ import styles from '../styles/Home.module.css'
 // images
 import women from "../public/assets/services/women.png"
 import clip from "../public/assets/navbar/clip.svg"
-import coaching from "../public/assets/images/coaching.png"
+import coaching from "../public/assets/images/coaching.gif"
 import starShape from "../public/assets/images/star-shape.svg"
-import twoWomen from "../public/assets/images/two-women.png"
+import twoWomen from "../public/assets/images/two-women.gif"
 import three from "../public/assets/hero/3.svg"
 
 
@@ -27,7 +27,7 @@ const Counselling = () => {
             <section className="layout-container pt-[65px] md:pt-[70px]">
                 <h1 className={`text-center mob-h1 text-textColor mb-3 xxs:w-[327px] xxs:mx-auto xs:w-full md:heading-1 md:mb-[42px] lg:w-[900px] lg:pt-5 ${styles.jeko_regular}`}>Counselling for your self, family and partners</h1>
                 <div className="relative mb-10 h-[177px] w-[280px] mx-auto md:h-[351px] md:w-[380px] md:mb-[50px]">
-                    <Image src={women} alt="" layout="fill" className="object-contain" />
+                    <Image src={twoWomen} alt="" layout="fill" className="object-contain" />
                 </div>
                 <h2 className={`mob-h2 text-center text-textColor mb-[27px] md:heading-2 md:mb-[50px] ${styles.jeko_regular}`}>All Counselling Services</h2>
                 <div className="flex flex-col items-center space-y-[62px] lg:flex-row lg:flex-wrap lg:justify-around lg:space-y-0 lg:gap-y-[132px]">
@@ -87,8 +87,8 @@ const Counselling = () => {
                         <div className="absolute w-[34px] h-[38px] -right-3 bottom-4 xs:-bottom-4 xs:w-16 xs:h-[72px]">
                             <Image src={three} alt="" layout="responsive" />
                         </div>
-                        <div>
-                            <Image src={twoWomen} alt="" layout="responsive" />
+                        <div className="w-[203px] h-[124px] relative xs:w-[358px] xs:h-[219px] mx-auto">
+                            <Image src={twoWomen} alt="" layout="fill" className="object-contain" />
                         </div>
                         <h4 className={`body-text font-inter text-center mt-[6px] mb-2 xs:heading-3 xs:mt-[17px] xs:mb-[9px] xs:${styles.jeko_regular}`}>Blog</h4>
                         <Button
