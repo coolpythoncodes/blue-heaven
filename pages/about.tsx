@@ -17,7 +17,8 @@ import coaching from "../public/assets/images/coaching.png"
 import coloredCircle from "../public/assets/images/colored-circles.svg"
 import starShape from "../public/assets/images/star-shape.svg"
 import whoOne from "../public/assets/images/who1.svg"
-import people from "../public/assets/about/about-people-group.png"
+// import people from "../public/assets/about/about-people-group.png"
+import people from "../public/assets/about/people.gif"
 
 
 

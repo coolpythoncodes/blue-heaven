@@ -17,9 +17,9 @@ import two from "../public/assets/hero/2.svg"
 import three from "../public/assets/hero/3.svg"
 import four from "../public/assets/hero/4.svg"
 import people from "../public/assets/images/people.png"
-import peopleDesktop from "../public/assets/images/people-desktop.png"
-import twoWomen from "../public/assets/images/two-women.png"
-import coaching from "../public/assets/images/coaching.png"
+import peopleDesktop from "../public/assets/images/people-desktop.gif"
+import twoWomen from "../public/assets/images/two-women.gif"
+import coaching from "../public/assets/images/coaching.gif"
 import coloredCircle from "../public/assets/images/colored-circles.svg"
 import starShape from "../public/assets/images/star-shape.svg"
 import yellowBlackFlower from "../public/assets/images/yellow-black-flower.svg"
@@ -30,7 +30,7 @@ const Home: NextPage = () => {
   return (
     <Layout navBarColor="bg-blueBg">
       {/* Hero Section */}
-      <header className="bg-blueBg text-creamSecondaryBg m-0 pt-10 h-[70vh] xxs:h-[55vh] xs:h-[70vh] lg:h-screen xl:pt-12">
+      <header className="bg-blueBg text-creamSecondaryBg m-0 pt-10 h-[70vh] xxs:h-[55vh] xs:h-[70vh] lg:h-screen xl:pt-[60px] xl:mb-[55px]">
         <div className="layout-container xs:w-4/5 md:w-11/12  xl:relative">
           <h1 className={`mob-h1 text-center md:heading-1 xl:w-[800px] xl:mx-auto ${styles.jeko_regular}`}>
             <span className="flex items-center justify-between xl:inline">
@@ -71,7 +71,7 @@ const Home: NextPage = () => {
           <div className="pt-8 pr-5 xs:px-5 lg:hidden">
             <Image src={people} alt="" layout="responsive" />
           </div>
-          <div className="hidden lg:block pt-6">
+          <div className="hidden lg:block pt-6 w-4/5 mx-auto">
             <Image src={peopleDesktop} alt="" layout="responsive" />
           </div>
           <h2 className={`mob-h2 text-center mt-10 mb-8 md:heading-2 lg:mt-20 ${styles.jeko_regular}`}>
@@ -91,8 +91,8 @@ const Home: NextPage = () => {
             <div className="absolute w-[45px] h-[43px] -left-[22px] bottom-2 xs:w-[82px] xs:h-[77px] xs:-bottom-10 xs:-left-10">
               <Image src={coloredCircle} alt="" layout="responsive" />
             </div>
-            <div>
-              <Image src={twoWomen} alt="" layout="responsive" />
+            <div className="w-[203px] h-[124px] relative xs:w-[358px] xs:h-[219px]">
+              <Image src={twoWomen} alt="" layout="fill" className="object-contain" />
             </div>
             <h4 className={`body-text font-inter text-center mt-[6px] mb-2 xs:heading-3 xs:mt-[17px] xs:mb-[9px] xs:${styles.jeko_regular}`}>Counselling</h4>
             <Button
@@ -129,8 +129,8 @@ const Home: NextPage = () => {
             <div className="absolute w-[34px] h-[38px] -right-3 bottom-4 xs:w-16 xs:h-[72px] xs:-bottom-4">
               <Image src={three} alt="" layout="responsive" />
             </div>
-            <div>
-              <Image src={twoWomen} alt="" layout="responsive" />
+            <div className="w-[203px] h-[124px] relative xs:w-[358px] xs:h-[219px]">
+              <Image src={twoWomen} alt="" layout="fill" className="object-contain" />
             </div>
             <h4 className={`body-text font-inter text-center mt-[6px] mb-2  xs:heading-3 xs:mt-[17px] xs:mb-[9px] xs:${styles.jeko_regular}`}>Blog</h4>
             <Button
