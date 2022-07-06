@@ -12,8 +12,8 @@ import styles from '../styles/Home.module.css'
 // images
 import clip from "../public/assets/hero/clip.svg"
 import three from "../public/assets/hero/3.svg"
-import twoWomen from "../public/assets/images/two-women.png"
-import coaching from "../public/assets/images/coaching.png"
+import twoWomen from "../public/assets/images/two-women.gif"
+import coaching from "../public/assets/images/coaching.gif"
 import coloredCircle from "../public/assets/images/colored-circles.svg"
 import starShape from "../public/assets/images/star-shape.svg"
 import whoOne from "../public/assets/images/who1.svg"
@@ -52,7 +52,7 @@ const About = () => {
                                     <h2 className={`mob-h2 text-lightBlueTertiary md:heading-1 ${styles.jeko_regular}`}>{item.name}</h2>
                                     <p className="body-text font-inter md:heading-3">{item.description}</p>
                                 </div>
-                                <div className={`w-[181px] mx-auto mt-[55px] md:w-[314px] lg:mx-0  ${index === 1 ? 'hidden lg:block -order-1 lg:self-start lg:ml-12' : 'mb-[53px] self-end lg:mr-10'}`}>
+                                <div className={`w-[181px] mx-auto mt-[55px] md:w-[314px] lg:mx-0  ${index === 1 ? 'hidden lg:block -order-1 lg:self-start xl:ml-12' : 'mb-[53px] self-end xl:mr-10'}`}>
                                     <Image src={item.image} alt="" layout="responsive" />
                                 </div>
                             </div>
@@ -81,8 +81,8 @@ const About = () => {
                         <div className="absolute w-[45px] h-[43px] -left-[22px] bottom-2 xs:w-[82px] xs:h-[77px] xs:-bottom-10 xs:-left-10">
                             <Image src={coloredCircle} alt="" layout="responsive" />
                         </div>
-                        <div>
-                            <Image src={twoWomen} alt="" layout="responsive" />
+                        <div className="w-[203px] h-[124px] relative xs:w-[358px] xs:h-[219px]">
+                            <Image src={twoWomen} alt="" layout="fill" className="object-contain" />
                         </div>
                         <h4 className={`body-text font-inter text-center mt-[6px] mb-2 xs:heading-3 xs:mt-[17px] xs:mb-[9px] xs:${styles.jeko_regular}`}>Counselling</h4>
                         <Button
@@ -119,8 +119,8 @@ const About = () => {
                         <div className="absolute w-[34px] h-[38px] -right-3 bottom-4 xs:w-16 xs:h-[72px] xs:-bottom-4">
                             <Image src={three} alt="" layout="responsive" />
                         </div>
-                        <div>
-                            <Image src={twoWomen} alt="" layout="responsive" />
+                        <div className="w-[203px] h-[124px] relative xs:w-[358px] xs:h-[219px]">
+                            <Image src={twoWomen} alt="" layout="fill" className="object-contain" />
                         </div>
                         <h4 className={`body-text font-inter text-center mt-[6px] mb-2  xs:heading-3 xs:mt-[17px] xs:mb-[9px] xs:${styles.jeko_regular}`}>Blog</h4>
                         <Button
