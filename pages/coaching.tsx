@@ -10,7 +10,7 @@ import Contact from "../components/sections/Contact"
 import styles from '../styles/Home.module.css'
 
 // Images
-import coaching from "../public/assets/images/coaching.png"
+import coaching from "../public/assets/images/coaching.gif"
 import starShape from "../public/assets/images/star-shape.svg"
 import { coachingProgramFunction } from "../utils/data"
 

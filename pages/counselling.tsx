@@ -10,7 +10,7 @@ import Clinicians from "../components/sections/Clinicians"
 import styles from '../styles/Home.module.css'
 
 // images
-import women from "../public/assets/services/women.png"
+// import women from "../public/assets/services/women.png"
 import clip from "../public/assets/navbar/clip.svg"
 import coaching from "../public/assets/images/coaching.gif"
 import starShape from "../public/assets/images/star-shape.svg"
