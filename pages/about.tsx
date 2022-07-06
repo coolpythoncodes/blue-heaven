@@ -51,7 +51,7 @@ const About = () => {
                                     <h2 className={`mob-h2 text-lightBlueTertiary md:heading-1 ${styles.jeko_regular}`}>{item.name}</h2>
                                     <p className="body-text font-inter md:heading-3">{item.description}</p>
                                 </div>
-                                <div className={`w-[181px] mx-auto mt-[55px] md:w-[314px] lg:mx-0  ${index === 1 ? 'hidden lg:block -order-1 lg:self-start' : 'mb-[53px] self-end'}`}>
+                                <div className={`w-[181px] mx-auto mt-[55px] md:w-[314px] lg:mx-0  ${index === 1 ? 'hidden lg:block -order-1 lg:self-start lg:ml-12' : 'mb-[53px] self-end lg:mr-10'}`}>
                                     <Image src={item.image} alt="" layout="responsive" />
                                 </div>
                             </div>

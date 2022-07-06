@@ -122,6 +122,16 @@ export const reviews = [
         review: 'To live is to travelled Asian adventure thrill seekers captain’s table the bird dance born to wander romance at sea back packers shore tours.',
         image: girl,
     },
+    {
+        name: 'The Wesley’s Family',
+        review: 'To live is to travelled Asian adventure thrill seekers captain’s table the bird dance born to wander romance at sea back packers shore tours.',
+        image: girl,
+    },
+    {
+        name: 'The Wesley’s Family',
+        review: 'To live is to travelled Asian adventure thrill seekers captain’s table the bird dance born to wander romance at sea back packers shore tours.',
+        image: girl,
+    },
 ]
 
 export const services = [
