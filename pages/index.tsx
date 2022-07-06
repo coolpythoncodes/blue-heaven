@@ -30,7 +30,7 @@ const Home: NextPage = () => {
   return (
     <Layout navBarColor="bg-blueBg">
       {/* Hero Section */}
-      <header className="bg-blueBg text-creamSecondaryBg m-0 pt-10 h-[70vh] xxs:h-[55vh] xs:h-[70vh] lg:h-screen">
+      <header className="bg-blueBg text-creamSecondaryBg m-0 pt-10 h-[70vh] xxs:h-[55vh] xs:h-[70vh] lg:h-screen xl:pt-12">
         <div className="layout-container xs:w-4/5 md:w-11/12  xl:relative">
           <h1 className={`mob-h1 text-center md:heading-1 xl:w-[800px] xl:mx-auto ${styles.jeko_regular}`}>
             <span className="flex items-center justify-between xl:inline">
@@ -52,11 +52,11 @@ const Home: NextPage = () => {
             <span>
               that hears you when you call
               <span className="flex items-center justify-evenly xl:inline">
-                <div className="inline w-8 h-7 md:w-[90px] md:h-[100px] xl:hidden">
+                <div className="inline w-8 h-7 md:w-[90px] md:h-[100px] xl:absolute xl:-left-5 xl:-bottom-[220px] xl:w-[66px] xl:h-[74px]">
                   <Image src={three} alt="" layout="responsive" />
                 </div>
                 {" "}for help
-                <div className="inline w-8 h-7 md:w-[90px] md:h-[100px] xl:hidden">
+                <div className="inline w-8 h-7 md:w-[90px] md:h-[100px] xl:absolute xl:right-0 xl:-bottom-[220px]">
                   <Image src={four} alt="" layout="responsive" />
                 </div>
               </span>
@@ -67,11 +67,11 @@ const Home: NextPage = () => {
       {/* End Hero Section */}
 
       <section>
-        <div className="layout-container relative bg-creamSecondaryBg max-w-[900px] -mt-[25vh] z-10 rounded-t-[100px] xxs:-mt-[20vh] xs:-mt-[25vh] xl:-mt-[40vh]">
+        <div className="layout-container relative bg-creamSecondaryBg max-w-[980px] -mt-[25vh] z-10 rounded-t-[100px] xxs:-mt-[20vh] xs:-mt-[25vh] xl:-mt-[45vh] xl:rounded-t-[200px]">
           <div className="pt-8 pr-5 xs:px-5 lg:hidden">
             <Image src={people} alt="" layout="responsive" />
           </div>
-          <div className="hidden lg:block pt-8">
+          <div className="hidden lg:block pt-6">
             <Image src={peopleDesktop} alt="" layout="responsive" />
           </div>
           <h2 className={`mob-h2 text-center mt-10 mb-8 md:heading-2 lg:mt-20 ${styles.jeko_regular}`}>
