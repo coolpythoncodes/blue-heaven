@@ -12,6 +12,7 @@ import clip from "../../public/assets/navbar/clip.svg";
 
 // css
 import styles from "../../styles/Home.module.css"
+import { useRouter } from "next/router";
 
 
 type Props = {
@@ -21,6 +22,7 @@ type Props = {
 
 const SideBar = ({ isOpen, toggleMenu }: Props) => {
     const [showServicesCategories, setShowServicesCategories] = useState(false)
+    const { pathname } = useRouter()
 
     return isOpen ? (
         <div className="bg-creamSecondaryBg h-full w-full fixed top-0 left-0 z-[999] overflow-y-hidden lg-hidden">
@@ -53,7 +55,7 @@ const SideBar = ({ isOpen, toggleMenu }: Props) => {
                                                     value?.categories?.map((value, index) => (
                                                         <li key={index}>
                                                             <Link href={value.to}>
-                                                                <a className="body-text font-inter">{value.text}</a>
+                                                                <a className="body-text font-inter">{pathname.toLowerCase() === `/${value.text.toLowerCase()}` ? null : value.text}</a>
                                                             </Link>
                                                         </li>
                                                     ))
