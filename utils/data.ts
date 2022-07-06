@@ -37,8 +37,8 @@ export const navLinks = [
                 to: '/coaching'
             },
             {
-                text: "Workshops",
-                to: '/'
+                text: "Blog",
+                to: '/blog'
             },
         ]
     },
@@ -72,15 +72,15 @@ export const footer_links = [
         links: [
             {
                 text: "Counselling",
-                to: "/"
+                to: "/counselling"
             },
             {
                 text: "Coaching",
-                to: "/"
+                to: "/coaching"
             },
             {
-                text: "Workshops",
-                to: "/"
+                text: "Blog",
+                to: "/blog"
             }
         ]
     },

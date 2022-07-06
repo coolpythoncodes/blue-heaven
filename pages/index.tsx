@@ -96,7 +96,7 @@ const Home: NextPage = () => {
             </div>
             <h4 className={`body-text font-inter text-center mt-[6px] mb-2 xs:heading-3 xs:mt-[17px] xs:mb-[9px] xs:${styles.jeko_regular}`}>Counselling</h4>
             <Button
-              href="/"
+              href="/counselling"
               title="Learn More"
               className="w-[134px] h-[40px] font-inter font-bold text-base text-black leading-6  flex justify-center items-center mx-auto border border-textColor rounded-t-[20px] xs:w-[240px] xs:button-text xs:h-[50px]"
               arrowStyle='w-2 h-2 ml-[3px] xs:w-5 xs:h-5 xs:ml-7'
@@ -115,7 +115,7 @@ const Home: NextPage = () => {
             </div>
             <h4 className={`body-text font-inter text-center mt-[6px] mb-2  xs:heading-3 xs:mt-[17px] xs:mb-[9px] xs:${styles.jeko_regular}`}>Coaching</h4>
             <Button
-              href="/"
+              href="/coaching"
               title="Learn More"
               className="w-[134px] h-[40px] font-inter font-bold text-base text-black leading-6  flex justify-center items-center mx-auto border border-textColor rounded-t-[20px] xs:w-[240px] xs:button-text xs:h-[50px]"
               arrowStyle='w-2 h-2 ml-[3px] xs:w-5 xs:h-5 xs:ml-7'
@@ -132,9 +132,9 @@ const Home: NextPage = () => {
             <div>
               <Image src={twoWomen} alt="" layout="responsive" />
             </div>
-            <h4 className={`body-text font-inter text-center mt-[6px] mb-2  xs:heading-3 xs:mt-[17px] xs:mb-[9px] xs:${styles.jeko_regular}`}>Workshops</h4>
+            <h4 className={`body-text font-inter text-center mt-[6px] mb-2  xs:heading-3 xs:mt-[17px] xs:mb-[9px] xs:${styles.jeko_regular}`}>Blog</h4>
             <Button
-              href="/"
+              href="/blog"
               title="Learn More"
               className="w-[134px] h-[40px] font-inter font-bold text-base text-black leading-6  flex justify-center items-center mx-auto border border-textColor rounded-t-[20px] xs:w-[240px] xs:button-text xs:h-[50px]"
               arrowStyle='w-2 h-2 ml-[3px] xs:w-5 xs:h-5 xs:ml-7'
@@ -172,7 +172,7 @@ const Home: NextPage = () => {
               <h2 className={`mob-h2 text-creamSecondaryBg lg:heading-2 ${styles.jeko_regular}`}>Coaching</h2>
               <p className="body-text font-inter text-white mt-[14px] mb-[34px] mx-auto">BHCC aims to support individuals and families to develop new skills and take ownership of their lives by following a tailor-made program to match everyone&rsquo;s needs. </p>
               <Button
-                href="/"
+                href="/coaching"
                 title="Learn More"
                 className="w-[134px] h-[49px] font-inter font-bold text-base text-white leading-6 flex justify-center items-center mx-auto border border-creamSecondaryBg rounded-t-[20px] xs:w-[207px] xs:button-text xs:h-[43px]"
                 arrowStyle='w-[11px] h-[11px] ml-2 xs:w-5 xs:h-5'
