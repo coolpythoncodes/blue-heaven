@@ -24,12 +24,9 @@ import coloredCircle from "../public/assets/images/colored-circles.svg"
 import starShape from "../public/assets/images/star-shape.svg"
 import yellowBlackFlower from "../public/assets/images/yellow-black-flower.svg"
 import pointingArrow from "../public/assets/arrows/pointing-arrow.svg"
-import useWindowDimensions from '../hooks/useWindowDimensions'
 
 
 const Home: NextPage = () => {
-  const { width } = useWindowDimensions()
-  console.log(width)
 
   return (
     <Layout navBarColor="bg-blueBg">

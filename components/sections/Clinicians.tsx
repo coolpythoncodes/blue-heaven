@@ -26,7 +26,7 @@ const Clinicians = () => {
                             </div>
                             <div className={`lg:w-[454px] ${index === 1 && "order-1"}`}>
                                 <p className={`body-text font-inter mt-2 md:heading-3 md:${styles.jeko_regular}`}>{value.name}</p>
-                                <p className={`body-text font-inter md:heading-3  md:${styles.jeko_regular}`}>{value.role}</p>
+                                <p className={`body-text font-inter font-extrabold md:heading-3 md:font-extrabold`}>{value.role}</p>
                                 <p className="mt-5 text-center body-text font-inter md:heading-3 lg:body-text">{value.bio}</p>
                             </div>
                         </div>

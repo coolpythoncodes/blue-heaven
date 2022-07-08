@@ -41,7 +41,7 @@ const Counselling = () => {
                                     </div>
                                 </h4>
                                 <p className="font-inter font-normal text-[15px] leading-[23px] px-5 md:body-text md:px-8 md:mb-[54px]">{value.description}</p>
-                                <h2 className="heading-2 mt-[11px] mb-[6px] md:heading-1 md:mb-8">{value.price}</h2>
+                                <h2 className={`heading-2 mt-[11px] mb-[6px] md:heading-1 md:mb-8 ${styles.jeko_regular}`}>{value.price}</h2>
                                 <Button
                                     href=""
                                     title="Book Now"
