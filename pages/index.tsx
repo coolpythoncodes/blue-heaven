@@ -24,13 +24,78 @@ import coloredCircle from "../public/assets/images/colored-circles.svg"
 import starShape from "../public/assets/images/star-shape.svg"
 import yellowBlackFlower from "../public/assets/images/yellow-black-flower.svg"
 import pointingArrow from "../public/assets/arrows/pointing-arrow.svg"
+import useWindowDimensions from '../hooks/useWindowDimensions'
 
 
 const Home: NextPage = () => {
+  const { width } = useWindowDimensions()
+  console.log(width)
+
   return (
     <Layout navBarColor="bg-blueBg">
       {/* Hero Section */}
-      <header className="bg-blueBg text-creamSecondaryBg m-0 pt-10 h-[70vh] xxs:h-[55vh] xs:h-[70vh] lg:h-screen xl:pt-[60px] xl:mb-[55px]">
+      <header className="bg-blueBg text-creamSecondaryBg pt-[73px] h-[68vh] xxs:h-[53vh] xs:h-[55vh] md:h-[70vh] md:pt-[85px] lg:h-[100vh] xl:pt-[100px]">
+        <div className="layout-container text-center max-w-[800px] xxs:w-[85%] xs:w-3/4 md:w-11/12">
+          <h1 className={`relative mob-h1 md:heading-1 ${styles.jeko_regular}`}>
+            <div className="absolute top-4 w-8 h-7 xs:-left-8 md:w-[108px] md:h-[70px] md:left-2 lg:-left-20
+            xl:-left-[100px] xl:top-5 xl:h-[108px] xl:w-[112px]">
+              <Image src={one} alt="" layout='fill' className="object-contain" />
+            </div>
+            <div className="absolute top-6 right-0 w-8 h-7 xs:-right-6 md:w-[60px] md:h-[70px] md:right-0 lg:-right-[60px] xl:top-12 xl:-right-[140px] xl:w-[87px] xl:h-[76px]">
+              <Image src={two} alt="" layout='fill' className="object-contain" />
+            </div>
+            <div className="absolute bottom-3 left-9 w-7 h-6 xs:left-0 md:w-10 md:h-12 md:left-[100px] lg:left-[50px] xl:w-[65px] xl:h-[74px] xl:-left-[180px] xl:-bottom-[28vh]">
+              <Image src={three} alt="" layout='fill' className="object-contain" />
+            </div>
+            {/* <div className="absolute bottom-3 left-9 w-7 h-6 xs:left-0 md:w-10 md:h-12 md:left-[100px] lg:left-[50px] xl:w-[65px] xl:h-[74px] xl:-left-[180px] xl:-bottom-[350px]  error">
+              <Image src={three} alt="" layout='fill' className="object-contain" />
+            </div> */}
+            <div className="absolute bottom-2 right-10 w-10 h-10 xs:right-0 md:w-[60px] md:h-[70px] md:right-20 lg:right-10 xl:w-[120px] xl:h-[200px] xl:-right-[200px] xl:-bottom-[28vh]">
+              <Image src={four} alt="" layout='fill' className="object-contain" />
+            </div>
+            {/* <div className="absolute bottom-2 right-10 w-10 h-10 xs:right-0 md:w-[60px] md:h-[70px] md:right-20 lg:right-10 xl:w-[120px] xl:h-[200px] xl:-right-[200px] xl:-bottom-[380px]">
+              <Image src={four} alt="" layout='fill' className="object-contain" />
+            </div> */}
+            <span className="block xs:inline md:block lg:inline">A counselling</span>
+            {" "}
+            <span className="relative">
+              haven
+              <div className="absolute top-[30px] w-[65px] h-[31px] left-5 md:w-[110px] md:top-[70px] md:left-[45px]">
+                <Image src={clip} alt='' layout='fill' className="object-contain" />
+              </div>
+            </span>
+            {" "}
+            that hears you when you call
+            {" "}
+            <span className="block xs:inline md:block lg:inline">for help</span>
+          </h1>
+        </div>
+      </header>
+
+      <section>
+
+        <div className="w-[328px] max-w-[980px] rounded-t-[100px] mx-auto -mt-[19vh] pl-[11px] bg-creamSecondaryBg xxs:-mt-[15vh] xs:-mt-[17vh] xs:w-3/4 md:-mt-[20vh] md:rounded-t-[200px] md:w-11/12 lg:-mt-[30vh] lg:pl-[50px] lg:pr-[70px] xl:-mt-[34vh]">
+          <div className="relative md:hidden w-11/12 h-[202px]">
+            <Image src={people} alt="" layout="fill" className="object-contain" />
+          </div>
+          <div className="relative hidden pt-6 w-4/5 mx-auto h-[300px] md:block md:w-11/12 md:h-[400px] lg:w-full xl:w-full xl:mx-0">
+            <Image src={peopleDesktop} alt="" layout="fill" className="object-contain" />
+          </div>
+        </div>
+
+        <h2 className={`mob-h2 text-center mt-10 mb-8 md:heading-2 lg:mt-[134px] lg:mb-[50px] ${styles.jeko_regular}`}>
+          Our personalized approach to {" "}
+          <span className="relative">
+            Care
+            <div className="hidden absolute top-[55px] left-2 w-[110px] lg:block">
+              <Image src={clip} alt='' layout='responsive' />
+            </div>
+          </span>
+        </h2>
+      </section>
+
+
+      {/* <header className="bg-blueBg text-creamSecondaryBg m-0 pt-10 h-[70vh] xxs:h-[55vh] xs:h-[70vh] lg:h-screen xl:pt-[60px] xl:mb-[55px]">
         <div className="layout-container xs:w-4/5 md:w-11/12  xl:relative">
           <h1 className={`mob-h1 text-center md:heading-1 xl:w-[800px] xl:mx-auto ${styles.jeko_regular}`}>
             <span className="flex items-center justify-between xl:inline">
@@ -63,11 +128,11 @@ const Home: NextPage = () => {
             </span>
           </h1>
         </div>
-      </header>
+      </header> */}
       {/* End Hero Section */}
 
       <section>
-        <div className="layout-container relative bg-creamSecondaryBg max-w-[980px] -mt-[25vh] z-10 rounded-t-[100px] xxs:-mt-[20vh] xs:-mt-[25vh] xl:-mt-[45vh] xl:rounded-t-[200px]">
+        {/* <div className="layout-container relative bg-creamSecondaryBg max-w-[980px] -mt-[25vh] z-10 rounded-t-[100px] xxs:-mt-[20vh] xs:-mt-[25vh] xl:-mt-[45vh] xl:rounded-t-[200px]">
           <div className="pt-8 pr-5 xs:px-5 lg:hidden">
             <Image src={people} alt="" layout="responsive" />
           </div>
@@ -83,7 +148,7 @@ const Home: NextPage = () => {
               </div>
             </span>
           </h2>
-        </div>
+        </div> */}
 
         <div className="layout-container flex flex-col items-center space-y-10 mt-[33px] xs:mt-[50px] xs:space-y-20 xl:flex-row xl:space-y-0 xl:justify-between">
           {/* Counselling */}
