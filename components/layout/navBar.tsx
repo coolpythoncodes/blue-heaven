@@ -2,7 +2,7 @@ import { useState } from "react";
 import Image from "next/image";
 import HamburgerMenu from "../misc/hamburgerMenu";
 import Link from "next/link";
-import { navLinks } from "../../utils/data";
+import { bookingUrl, navLinks } from "../../utils/data";
 import Button from "../input/button";
 import SideBar from "./sidebar";
 
@@ -89,7 +89,12 @@ const NavBar = ({ navBarColor }: Props) => {
 
                     {/* Book now  */}
                     <div className="hidden lg:block">
-                        <Button href="/" title="Book Now" />
+                        <Button
+                            href={bookingUrl}
+                            target="_blank"
+                            rel="noreferrer noopener"
+                            title="Book Now"
+                        />
                     </div>
 
                     {/* Hamburger menu */}

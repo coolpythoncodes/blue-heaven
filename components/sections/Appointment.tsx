@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Button from "../input/button"
+import { bookingUrl } from "../../utils/data"
 
 // css
 import styles from '../../styles/Home.module.css'
@@ -21,7 +22,9 @@ const Appointment = () => {
                 <h2 className={`mob-h2 mb-[15px] md:heading-2 md:mb-2 ${styles.jeko_regular}`}>Appointments</h2>
                 <p className="body-text-font-inter w-[268px] mx-auto mb-[22px] md:heading-3 md:w-[434px] md:mb-[61px]">Book an appointment and get the best counselling sessions with the best clinicians</p>
                 <Button
-                    href=""
+                    href={bookingUrl}
+                    target="_blank"
+                    rel="noreferrer noopener"
                     title="Book Now"
                     className="w-[133px] h-[50px] bg-lightBlueTertiary border border-textColor body-text font-inter flex items-center justify-center mx-auto rounded-t-[20px] hover:bg-creamSecondaryBg md:w-[211px] md:button-text"
                     arrowStyle="h-[10px] w-[10px] ml-1 md:h-5 md:w-5 md:ml-[15px]"

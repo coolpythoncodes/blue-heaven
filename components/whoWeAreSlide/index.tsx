@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Slider from "react-slick";
-import { whoWeArDetails } from "../../utils/data";
+import { bookingUrl, whoWeArDetails } from "../../utils/data";
 import Button from "../input/button";
 import SideArrow from "../slideArrow";
 
@@ -40,8 +40,10 @@ const WhoWeAreSlide = () => {
                                 <h2 className={`mob-h2 xs:heading-2 xs:mb-[14px] ${styles.jeko_regular}`}>{value.heading}</h2>
                                 <p className="body-text font-inter mb-[29px]">{value.description}</p>
                                 <Button
-                                    href={value.href}
-                                    title="Book Now"
+                                     href={bookingUrl}
+                                     target="_blank"
+                                     rel="noreferrer noopener"
+                                     title="Book Now"
                                     className="w-[133px] h-[50px] bg-lightBlueTertiary border border-textColor body-text font-inter flex items-center justify-center mx-auto rounded-t-[20px] hover:bg-creamSecondaryBg xs:w-[211px] xs:button-text"
                                     arrowStyle="h-[10px] w-[10px] ml-1 xs:h-5 xs:w-5 xs:ml-[15px]"
                                 />

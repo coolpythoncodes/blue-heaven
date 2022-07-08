@@ -1,6 +1,7 @@
+import { SetStateAction, useEffect, useRef, useState } from "react"
 import Layout from "../components/layout"
 import Image from "next/image"
-import { services } from "../utils/data"
+import { bookingUrl, counsellingProcess, services } from "../utils/data"
 import Button from "../components/input/button"
 import Review from "../components/review"
 import Contact from "../components/sections/Contact"
@@ -21,6 +22,37 @@ import three from "../public/assets/hero/3.svg"
 
 
 const Counselling = () => {
+
+    const [activeSection, setActiveSection] = useState('100')
+
+    const rightSection = useRef<HTMLDivElement>(null)
+
+    const rootElement = useRef<HTMLDivElement>(null);
+    const options = {
+        root: rootElement.current,
+        rootMargin: "0px 0px -70% 0px",
+        // threshold: 0
+    }
+
+    // const currentSection = useRef('')
+
+    const callback = (entries: any[]) => {
+        entries.forEach((entry: { intersectionRatio: number; target: { getAttribute: (arg0: string) => SetStateAction<string> } }) => {
+            if (entry.intersectionRatio > 0) {
+                setActiveSection(entry.target.getAttribute('id'))
+            }
+        })
+    }
+
+
+    useEffect(() => {
+        const _rightSection = rightSection.current?.querySelectorAll(".right-header");
+
+        const observer = new IntersectionObserver(callback, options);
+        _rightSection?.forEach(section => observer.observe(section))
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
+
     return (
         <Layout title="Services - Counselling">
             {/* hero  */}
@@ -29,6 +61,57 @@ const Counselling = () => {
                 <div className="relative mb-10 h-[177px] w-[280px] mx-auto md:h-[351px] md:w-[380px] md:mb-[50px]">
                     <Image src={twoWomen} alt="" layout="fill" className="object-contain" />
                 </div>
+
+
+                <section ref={rootElement} className="mb-[65px] md:mt-[137px] md:layout-container">
+                    <h1 className={`mob-h2  text-center text-textColor mb-[53px] md:font-inter font-extrabold md:text-left md:text-[40px] md:leading-[48px] md:mb-[59px] ${styles.jeko_regular}`}>Understanding the Counselling Process</h1>
+                    <div className="md:grid md:grid-cols-[1fr_2fr]">
+                        <div className="hidden md:block xl:w-[420px]">
+                            <div className="flex flex-col space-y-[19px] sticky top-[140px]">
+                                {
+                                    counsellingProcess.map((value, index) => (
+                                        <div key={index} className="h-[43px] w:[200px]  border border-black rounded-t-[20px] pt-[10px] pb-1 px-[21px] flex justify-between items-center md:h-[61px]">
+                                            <p className={`text-sm text-black lg:text-lg xl:heading-3 ${styles.jeko_regular}`}>{value.heading}</p>
+                                            <div className={`h-[25px] w-[25px] rounded-t-[10px] border border-black  ${value.id === activeSection && 'bg-lightBlueTertiary'}`}></div>
+                                        </div>
+                                    ))
+                                }
+                            </div>
+                        </div>
+                        <div className="flex justify-end">
+                            <div className="w-[297px] mx-auto md:mx-0 md:ml-auto md:w-[400px] lg:w-[450px] xl:w-[551px]">
+                                <div className="flex flex-col space-y-[52px] md:space-y-[64px]" ref={rightSection}>
+                                    {
+                                        counsellingProcess.map((value, index) => (
+                                            <div key={index}>
+                                                <div
+                                                    id={value.id}
+                                                    className="right-header h-[43px] border border-black rounded-t-[20px] bg-blueBg pt-[10px] pb-1 px-[21px] flex justify-between items-center mb-6 md:h-12 md:p-0 md:flex md:justify-center md:w-fit md:px-8">
+                                                    <p className="body-text text-white font-inter md:text-xl lg:heading-3">{value.heading}</p>
+                                                    <div className={`h-[25px] w-[25px] rounded-t-[10px] border border-black  ${value.id === activeSection && 'bg-lightBlueTertiary'} md:hidden`}></div>
+                                                </div>
+
+                                                <div className="">
+                                                    {
+                                                        value.more.map((value, index) => (
+                                                            <div key={index}>
+                                                                <div className="relative h-[148px] border border-black mb-4 md:w-[350px] lg:mb-9 lg:w-[400px] xl:w-[500px] lg:h-[248px]">
+                                                                    <Image src={value.image} alt="" layout="fill" className="object-contain" />
+                                                                </div>
+                                                                <p className={`body-text font-inter text-textColor md:heading-3 md:${styles.jeko_regular}`} dangerouslySetInnerHTML={{ __html: value.text }} />
+                                                            </div>
+                                                        ))
+                                                    }
+                                                </div>
+                                            </div>
+                                        ))
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 <h2 className={`mob-h2 text-center text-textColor mb-[27px] md:heading-2 md:mb-[50px] ${styles.jeko_regular}`}>All Counselling Services</h2>
                 <div className="flex flex-col items-center space-y-[62px] lg:flex-row lg:flex-wrap lg:justify-around lg:space-y-0 lg:gap-y-[132px]">
                     {
@@ -43,7 +126,9 @@ const Counselling = () => {
                                 <p className="font-inter font-normal text-[15px] leading-[23px] px-5 md:body-text md:px-8 md:mb-[54px]">{value.description}</p>
                                 <h2 className={`heading-2 mt-[11px] mb-[6px] md:heading-1 md:mb-8 ${styles.jeko_regular}`}>{value.price}</h2>
                                 <Button
-                                    href=""
+                                    href={bookingUrl}
+                                    target="_blank"
+                                    rel="noreferrer noopener"
                                     title="Book Now"
                                     className="w-[133px] h-[50px] bg-lightBlueTertiary border border-textColor body-text font-inter flex items-center justify-center mx-auto rounded-t-[20px] md:w-[211px] md:button-text hover:bg-transparent"
                                     arrowStyle="h-[10px] w-[10px] ml-1 md:h-5 md:w-5 md:ml-[15px]"

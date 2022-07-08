@@ -108,10 +108,10 @@ const Review = () => {
     return (
         <section ref={reviewRef} className="mt-[81px] md:mt-[145px] layout-container mx-0 ml-auto overflow-x-hidden">
             <h2 className={`mob-h2 text-black mb-[19px] md:heading-2 md:mb-[78px] ${styles.jeko_regular}`}>Reviews from our Clients</h2>
-            <div className="flex space-x-5 w-fit mb-[13px] relative">
+            <div className="flex w-fit mb-[13px] relative">
                 {
                     reviews.map((value, index) => (
-                        <div key={index} className={`bg-creamSecondaryBg transition-all duration-1000  review-box z-[${index}0] w-[299px] pl-[10px] pb-[15px] pr-[33px] pt-3 border border-textColor relative md:w-[550px] md:pt-[29px] md:px-10 md:pb-[65px]`}>
+                        <div key={index} className={`bg-creamSecondaryBg transition-all duration-1000 mr-5 last:mr-0 review-box z-[${index}0] w-[299px] pl-[10px] pb-[15px] pr-[33px] pt-3 border border-textColor relative md:w-[550px] md:pt-[29px] md:px-10 md:pb-[65px]`}>
                             <div className="w-[15px] h-[10px] relative">
                                 <Image src={quote} alt='' layout="fill" className="object-contain" />
                             </div>

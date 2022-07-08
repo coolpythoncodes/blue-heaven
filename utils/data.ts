@@ -245,6 +245,61 @@ export const coachingProgramFunction = [
     },
 ]
 
+export const counsellingProcess = [
+    {
+        id: '100',
+        heading: 'Free Consultation',
+        more: [
+            {
+                image: intake,
+                text: "Connect with one of our counselors for a 15-minute consultation to help ensure that we are an excellent therapist. Counsellors provide consultation either by phone or in person. They take time to respond to any concerns or questions!",
+            }
+        ]
+    },
+    {
+        id: '200',
+        heading: 'Initial session',
+        more: [
+            {
+                image: agreement,
+                text: "During this phase, the counsellor discusses with the patients what brought them to Counselling in more detail to understand the issues from multiple angles to select the therapeutic interventions that will meet their specific needs and circumstances.",
+            }
+        ]
+    },
+    {
+        id: '300',
+        heading: 'Second session',
+        more: [
+            {
+                image: evaluation,
+                text: "In this second stage, the counsellor tries to define further the goals set out in session one with the patient for the overall purpose of coming out with an action plan. The patient provides new information through an exploration of their thoughts and feelings.",
+            }
+        ]
+    },
+    {
+        id: '400',
+        heading: 'Subsequent sessions',
+        more: [
+            {
+                image: completion,
+                text: "The counsellor will continue to revise the patient’s goals as they progress in Therapy. The counsellor will always ask the patient at the start of the session what they wish to discuss and tie their wish to the goal they have for the counselling session. The counsellor will allow them to provide feedback at the session's end",
+            }
+        ]
+    },
+    {
+        id: '500',
+        heading: 'Ending Therapy',
+        more: [
+            {
+                image: completion,
+                text: `The counsellors might decide to end Therapy in agreement with the patient if they find that the patient has reached their goal. Likewise, patients can request to end a conversation if they believe they have developed the confidence and skills to navigate Life's challenges—or at least the challenges that brought them to Counselling. 
+                <br /> <br />
+                It doesn't mean that you don't ever seek support, I hope you do—but that you feel comfortable making decisions that benefit you and your situation and that you're clear on what your options and choices are.`,
+            }
+        ]
+    },
+]
+
 export const faq = [
     {
         id: '100',
@@ -325,6 +380,7 @@ export const faq = [
     },
 ]
 
+export const bookingUrl = "https://bluehavencounsellingcoachinginc.janeapp.com/admin"
 
 // // Set this to 0 for slides to directly overlap
 // let sliderOffset = 20;
