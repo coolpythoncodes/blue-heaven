@@ -380,7 +380,7 @@ export const faq = [
     },
 ]
 
-export const bookingUrl = "https://bluehavencounsellingcoachinginc.janeapp.com/admin"
+export const bookingUrl = "https://bluehavencounsellingcoachinginc.janeapp.com/"
 
 // // Set this to 0 for slides to directly overlap
 // let sliderOffset = 20;
