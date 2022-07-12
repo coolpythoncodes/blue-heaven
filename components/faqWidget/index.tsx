@@ -2,8 +2,8 @@ import { useRef } from 'react'
 import Image from 'next/image';
 
 // images
-import open from "../../public/assets/faq/open.svg"
-import close from "../../public/assets/faq/close.svg"
+import plus from "../../public/assets/faq/plus.svg"
+import minus from "../../public/assets/faq/minus.svg"
 
 type Props = {
     active: boolean,
@@ -21,11 +21,17 @@ const FaqWidget = ({ active, onToggle, faq }: Props) => {
     return (
         <div className="border-t border-black first:border-t-0">
             {/* Question */}
-            <div className="pl-[18px] pr-2 flex justify-between items-center pt-1 pb-2 lg:pt-[14px] lg:px-5 lg:pb-[21px]" onClick={onToggle}>
-                <p className="text-black font-inter text-sm leading-[21px] md:body-text">{faq.question}</p>
-                <div className="relative w-[17px] h-[17px] cursor-pointer lg:w-[42px] lg:h-[42px]">
-                    <Image src={active ? close : open} alt="" layout="fill" className="object-contain" />
+            <div className="pl-[18px] pr-2 flex justify-between items-center pt-1 pb-2 lg:pt-[14px] lg:px-5 lg:pb-[21px]
+            " onClick={onToggle}>
+                <p className="text-black font-inter text-sm leading-[21px] md:body-text w-11/12">{faq.question}</p>
+                <div className="w-[17px] h-[17px] rounded-t-[10px] border border-black flex items-center justify-center  cursor-pointer lg:w-[42px] lg:h-[42px]">
+                    <div className="relative w-[7px] h-[7px] lg:w-4 lg:h-4">
+                        <Image src={active ? minus : plus} layout="fill" className="object-fill" alt="" />
+                    </div>
                 </div>
+                {/* <div className="relative w-[17px] h-[17px] cursor-pointer lg:w-[42px] lg:h-[42px]">
+                        <Image src={active ? close : open} alt="" layout="fill" className="object-contain" />
+                    </div> */}
             </div>
             {/* Answer */}
             <div

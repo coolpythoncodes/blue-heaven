@@ -58,8 +58,8 @@ const Faq = () => {
 
     return (
         <Layout title="FAQ">
-            <div ref={rootElement} className="md:layout-container md:grid md:grid-cols-2 pt-10 lg:pt-[65px] lg:mb-[164px]">
-                <div className="hidden w-full md:block lg:w-[420px]">
+            <div ref={rootElement} className="md:layout-container md:grid md:grid-cols-2 pt-10 lg:pt-[65px] lg:mb-[164px] xl:grid-cols-[1fr_2fr] xl:gap-x-[130px]">
+                <div className="hidden w-full md:block lg:w-[420px] xl:w-full">
                     <div className="flex flex-col space-y-[19px] sticky top-[140px]">
                         {
                             faq.map((value, index) => (
@@ -73,7 +73,7 @@ const Faq = () => {
                 </div>
                 {/* FAQ section */}
                 <div className="flex justify-end" >
-                    <div className="w-[297px] mx-auto md:mx-0 ml-auto lg:w-[750px]">
+                    <div className="w-[297px] mx-auto md:mx-0 ml-auto lg:w-[750px] xl:w-full xl:m-0">
                         <h1 className={`text-black text-center mob-h1 mb-[35px] md:text-left md:mb-5 lg:heading-1 ${styles.jeko_regular}`}>FAQs</h1>
                         <div className="flex flex-col space-y-[49px]" ref={faqSections}>
                             {
